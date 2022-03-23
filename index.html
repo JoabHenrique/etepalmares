@@ -18,19 +18,91 @@
 
         @media (max-width: 476px) {
             .navbar-brand {
-                margin: 0 40%;
+                margin: 0 38%;
+            }
+
+            .btn-access-library {
+                margin-left: 21%;
+            }
+
+            .btn-menu {
+                margin-left: 38%;
+            }
+        }
+
+        @media (max-width: 430px) {
+            .btn-access-library {
+                margin-left: 18%;
             }
         }
 
         @media (max-width: 400px) {
             .navbar-brand {
-                margin: 0 35%;
+                margin: 0 36%;
+            }
+
+            .btn-access-library {
+                margin-left: 17%;
             }
         }
 
-        @media (max-width: 3300px) {
+        @media (max-width: 385px) {
+            .btn-access-library {
+                margin-left: 16%;
+            }
+
+            .btn-menu {
+                margin-left: 36%;
+            }
+        }
+
+        @media (max-width: 370px) {
             .navbar-brand {
-                margin: 0 33%;
+                margin: 0 35%;
+            }
+
+            .btn-access-library {
+                margin-left: 13%;
+            }
+        }
+
+        @media (max-width: 350px) {
+            .btn-access-library {
+                margin-left: 12%;
+            }
+        }
+
+        @media (max-width: 345px) {
+            .navbar-brand {
+                margin: 0 34%;
+            }
+
+            .btn-access-library {
+                margin-left: 11%;
+            }
+        }
+
+        @media (max-width: 335px) {
+            .btn-access-library {
+                margin-left: 9%;
+            }
+
+            .btn-menu {
+                margin-left: 35%;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .navbar-brand {
+                margin: 0 32%;
+            }
+
+            .btn-access-library {
+                margin-left: 7%;
+            }
+
+            .btn-menu {
+                margin-left: 33%;
             }
         }
     </style>
@@ -43,10 +115,14 @@
                 <a class="navbar-brand" href="#">
                     <img src="imagens/logo_ete.png" alt="logo_ete" width="100" height="75">
                 </a>
-                <a href="#" type="button" class="btn btn-light">ACESSAR <strong>BIBLIOTECA</strong> ONLINE</a>
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                <div class="btn-access-library">
+                    <a href="#" type="button" class="btn btn-light">ACESSAR <strong>BIBLIOTECA</strong> ONLINE</a>
+                </div>
+                <div class="btn-menu">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-list"></i>
                     MENU</button>
+                </div>
 
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                     aria-labelledby="offcanvasRightLabel">
@@ -65,6 +141,7 @@
     </header>
 
     <div class="container">
+        <!-- <p style="text-align: center;">.</p> -->
         <section class="images">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -210,7 +287,8 @@
                     <div class="col-lg coll align-self-start">
                         <div class="card">
                             <div class="card-body">
-                                <img src="imagens/telephone.png" class="card-img-top" alt="telephone" style="width: 8rem;">
+                                <img src="imagens/telephone.png" class="card-img-top" alt="telephone"
+                                    style="width: 8rem;">
                                 <h5 style="text-align: center;" class="card-title mt-2"><strong>Telefone</strong></h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Inscrições indisponíveis</h6>
                                 <p class="card-text">Administração, Agropecuária e Desenvolvimento de
@@ -238,7 +316,8 @@
                     <div class="col-lg coll align-self-start">
                         <div class="card">
                             <div class="card-body">
-                                <img src="imagens/facebook.png" class="card-img-top" alt="facebook" style="width: 8rem;">
+                                <img src="imagens/facebook.png" class="card-img-top" alt="facebook"
+                                    style="width: 8rem;">
                                 <h5 style="text-align: center;" class="card-title mt-2"><strong>Facebook</strong></h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Inscrições indisponíveis</h6>
                                 <p class="card-text">Administração, Desenvolvimento de Sistemas e
@@ -251,7 +330,8 @@
                     <div class="col-lg coll align-self-start">
                         <div class="card">
                             <div class="card-body">
-                                <img src="imagens/instagram.png" class="card-img-top" alt="instagram" style="width: 8rem;">
+                                <img src="imagens/instagram.png" class="card-img-top" alt="instagram"
+                                    style="width: 8rem;">
                                 <h5 style="text-align: center;" class="card-title mt-2"><strong>Instagram</strong></h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Inscrições indisponíveis</h6>
                                 <p class="card-text">Administração, Desenvolvimento de Sistemas e
