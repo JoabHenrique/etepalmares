@@ -10,10 +10,28 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="icon" href="imagens/logo_ete.png">
-    
+
     <style>
         html {
             scroll-behavior: smooth;
+        }
+
+        @media (max-width: 476px) {
+            .navbar-brand {
+                margin: 0 40%;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .navbar-brand {
+                margin: 0 35%;
+            }
+        }
+
+        @media (max-width: 3300px) {
+            .navbar-brand {
+                margin: 0 33%;
+            }
         }
     </style>
 </head>
@@ -171,22 +189,76 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Accordion Item #3
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                            collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="location">
+            <h1 class="mt-2" style="text-align: center;">LOCALIZAÇÃO</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.179632245066!2d-35.57762335743803!3d-8.674461036267205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x700a01016b7dce3%3A0x9b80e4e0fccbd69c!2sESCOLA%20T%C3%89CNICA%20ESTADUAL%20DE%20PALMARES!5e0!3m2!1spt-BR!2sbr!4v1648000503949!5m2!1spt-BR!2sbr"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <hr>
+
+        <section class="contact">
+            <h1 class="mt-2" style="text-align: center;">CONTATO</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg coll align-self-start">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="imagens/telephone.png" class="card-img-top" alt="telephone" style="width: 8rem;">
+                                <h5 style="text-align: center;" class="card-title mt-2"><strong>Telefone</strong></h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Inscrições indisponíveis</h6>
+                                <p class="card-text">Administração, Agropecuária e Desenvolvimento de
+                                    Sistemas.</p>
+                                <a href="#" class="card-link">Saiba mais</a>
+                                <a href="#" class="card-link">Fique atualizado</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg coll align-self-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="imagens/mail.png" class="card-img-top" alt="mail" style="width: 8rem;">
+                                <h5 style="text-align: center;" class="card-title mt-1"><strong>E-mail</strong></h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Inscrições indisponíveis</h6>
+                                <p class="card-text"> Administração, Biblioteconomia, Desenvolvimento de
+                                    Sistemas, Design de Interiores, Design Gráfico, Logística,
+                                    Multimídia, Recursos Humanos, Secretaria Escolar, Segurança do
+                                    Trabalho e Tradutor e Interpretação de Libras.</p>
+                                <a href="#" class="card-link">Saiba mais</a>
+                                <a href="#" class="card-link">Fique atualizado</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg coll align-self-start">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="imagens/facebook.png" class="card-img-top" alt="facebook" style="width: 8rem;">
+                                <h5 style="text-align: center;" class="card-title mt-2"><strong>Facebook</strong></h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Inscrições indisponíveis</h6>
+                                <p class="card-text">Administração, Desenvolvimento de Sistemas e
+                                    Segurança do Trabalho.</p>
+                                <a href="#" class="card-link">Saiba mais</a>
+                                <a href="#" class="card-link">Fique atualizado</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg coll align-self-start">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="imagens/instagram.png" class="card-img-top" alt="instagram" style="width: 8rem;">
+                                <h5 style="text-align: center;" class="card-title mt-2"><strong>Instagram</strong></h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Inscrições indisponíveis</h6>
+                                <p class="card-text">Administração, Desenvolvimento de Sistemas e
+                                    Segurança do Trabalho.</p>
+                                <a href="#" class="card-link">Saiba mais</a>
+                                <a href="#" class="card-link">Fique atualizado</a>
+                            </div>
                         </div>
                     </div>
                 </div>
