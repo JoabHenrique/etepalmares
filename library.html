@@ -100,84 +100,177 @@
         <section class="most-wanted">
             <div class="accordion mt-3" id="accordionExample">
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button bg-primary" style="color: white;" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                            aria-controls="collapseOne">
-                      Mais procurados
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <table class="table">
-                            <thead>
-                              <tr>
-                                <th>Imagem</th>
-                                <th>Nome</th>
-                                <th>Autor</th>
-                                <th>Estoque</th>
-                                <th>Disponíveis</th>
-                                <th>Resumo</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th><img src="images/logo_ete.png" width="50" alt="imagem"></th>
-                                <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
-                                </td>
-                                <td>38</td>
-                                <td>23</td>
-                                <td>12</td>
-                                <td>...</td>
-                              </tr>
-                              <tr>
-                                <th>2</th>
-                                <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
-                                </td>
-                                <td>38</td>
-                                <td>23</td>
-                                <td>12</td>
-                                <td>...</td>
-                              </tr>
-                              <tr>
-                                <th>3</th>
-                                <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
-                                </td>
-                                <td>38</td>
-                                <td>23</td>
-                                <td>12</td>
-                                <td>...</td>
-                              </tr>
-                              <tr>
-                                <th>4</th>
-                                <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
-                                </td>
-                                <td>38</td>
-                                <td>23</td>
-                                <td>12</td>
-                                <td>...</td>
-                              </tr>
-                              <tr>
-                                <th>5</th>
-                                <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
-                                </td>
-                                <td>38</td>
-                                <td>23</td>
-                                <td>12</td>
-                                <td>...</td>
-                              </tr>
-                              <tr>
-                                <th>6</th>
-                                <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
-                                </td>
-                                <td>38</td>
-                                <td>23</td>
-                                <td>12</td>
-                                <td>...</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                    </div>
+                  <li class="list-group-item active" aria-current="true">Mais procurados</li>
+                  <div class="table-container">
+                    <table class="table">
+                        <tr>
+                            <td>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;" class="card-img-top" alt="demo-book">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Nome Demonstrativo</h5>
+                                      <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                      <p class="card-text">Isto é apenas um resumo demonstrativo sobre este livro demonstrativo de um autor demonstrativo.</p>
+                                      <!-- Button trigger modal -->
+                                        <button type="button" style="margin-left: 27%;" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            SAIBA MAIS
+                                        </button>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </td>
+                            <td>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;" class="card-img-top" alt="demo-book">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Nome Demonstrativo</h5>
+                                      <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                      <p class="card-text">Isto é apenas um resumo demonstrativo sobre este livro demonstrativo de um autor demonstrativo.</p>
+                                      <!-- Button trigger modal -->
+                                        <button type="button" style="margin-left: 27%;" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            SAIBA MAIS
+                                        </button>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </td>
+                            <td>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;" class="card-img-top" alt="demo-book">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Nome Demonstrativo</h5>
+                                      <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                      <p class="card-text">Isto é apenas um resumo demonstrativo sobre este livro demonstrativo de um autor demonstrativo.</p>
+                                      <!-- Button trigger modal -->
+                                        <button type="button" style="margin-left: 27%;" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            SAIBA MAIS
+                                        </button>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </td>
+                            <td>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;" class="card-img-top" alt="demo-book">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Nome Demonstrativo</h5>
+                                      <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                      <p class="card-text">Isto é apenas um resumo demonstrativo sobre este livro demonstrativo de um autor demonstrativo.</p>
+                                      <!-- Button trigger modal -->
+                                        <button type="button" style="margin-left: 27%;" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            SAIBA MAIS
+                                        </button>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </td>
+                            <td>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;" class="card-img-top" alt="demo-book">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Nome Demonstrativo</h5>
+                                      <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                      <p class="card-text">Isto é apenas um resumo demonstrativo sobre este livro demonstrativo de um autor demonstrativo.</p>
+                                      <!-- Button trigger modal -->
+                                        <button type="button" style="margin-left: 27%;" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            SAIBA MAIS
+                                        </button>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </td>
+                          </tr>
+                    </table>
                   </div>
                 </div>
         </section>
