@@ -24,3 +24,13 @@
     background-color: #0d6efd;
     -webkit-border-radius: 10px;
 }
+
+.table th {
+    padding-left: 18px;
+}
+
+.table td {
+    padding-left: 18px;
+    padding-top: 30px;
+    font-size: 20px;
+}
