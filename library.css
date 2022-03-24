@@ -34,3 +34,55 @@
     padding-top: 30px;
     font-size: 20px;
 }
+
+@media (max-width: 476px) {
+    .navbar-brand {
+        margin: 0 38%;
+    }
+
+    .navbar-toggler {
+        margin-top: 5px;
+        margin-left: 44%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar-brand {
+        margin: 0 36%;
+    }
+}
+
+@media (max-width: 385px) {
+    .navbar-toggler {
+        margin-left: 43%;
+    }
+}
+
+@media (max-width: 370px) {
+    .navbar-brand {
+        margin: 0 35%;
+    }
+}
+
+@media (max-width: 345px) {
+    .navbar-brand {
+        margin: 0 34%;
+    }
+}
+
+@media (max-width: 335px) {
+    .navbar-toggler {
+        margin-left: 42%;
+    }
+}
+
+@media (max-width: 320px) {
+    .navbar-brand {
+        margin: 0 32%;
+    }
+
+    .navbar-toggler {
+        margin-left: 41%;
+    }
+}
