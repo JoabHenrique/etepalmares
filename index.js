@@ -11,7 +11,7 @@ const menuItems = document.querySelectorAll('.nav-item a[href^="#"]');
 
         function scrollToIdOnClick(event) {
             event.preventDefault();
-            const to = getScrollTopByHref(event.target) - 40;
+            const to = getScrollTopByHref(event.target) + 300;
             scrollToPosition(to);
         }
 
@@ -41,5 +41,5 @@ const menuItems = document.querySelectorAll('.nav-item a[href^="#"]');
                     clearInterval(timer);
                 }
                 window.scroll(newX, newY);
-            }, 1000 / 60); // 60 fps
+            }, 1000 / 60);
         };
