@@ -2,6 +2,14 @@
     margin: 0 auto;
 }
 
+.btn-know-more {
+    margin-left: 28%;
+}
+
+.btn-see-books {
+    margin-left: 28%;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -41,6 +49,10 @@
 
     .d-flex {
         margin-top: 10px;
+    }
+
+    #h1-name-library {
+        padding-top: 6px;
     }
 }
 
