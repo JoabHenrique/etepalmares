@@ -20,10 +20,11 @@
     <header>
         <nav class="navbar navbar-light bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="biblioteca.html">
                     <img src="images/logo_ete.png" alt="logo_ete" width="100" height="80">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,19 +32,315 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <form class="d-flex">
-                                <input class="form-control me-1" type="search" placeholder="O que você procura?"
-                                    aria-label="Search">
-                                <button class="btn btn-light" type="submit">PROCURAR</button>
-                            </form>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#categories" class="btn btn-light mt-1" style="width: 150px;">CATEGORIAS</a>
+                            <a href="#categories" class="btn btn-light mt-2" style="width: 150px;">CATEGORIAS</a>
                         </li>
                 </div>
             </div>
         </nav>
     </header>
+
+    <div class="container">
+        <section class="book-overview">
+            <section class="book-library-information">
+                <div class="card mt-3" style="width: 100%;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/demo-book.jpeg" class="img-fluid rounded-start" alt="demo-book">
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                <p><a href="#" style="color: black;">Categoria 1</a> • <a href="#"
+                                        style="color: black;">Categoria 2</a> • <a href="#"
+                                        style="color: black;">Categoria 3</a> • <a href="#" style="color: black;">Tag
+                                        1</a>
+                                    • <a href="#" style="color: black;">Tag 2</a>
+                                    • <a href="#" style="color: black;">Tag 3</a> • <a href="#"
+                                        style="color: black;">Tag
+                                        4</a> • <a href="#" style="color: black;">Tag 5</a></p>
+                                <p class="card-text">
+
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td>Disponível</th>
+                                            <td>Sim (x exemplares)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Quantidade</td>
+                                            <td>X exemplares</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Descrição</td>
+                                            <td><a href="#book-description"
+                                                    class="btn-see-description btn btn-primary btn-sm">Ver
+                                                    descrição</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Características</td>
+                                            <td><a href="#book-features"
+                                                    class="btn-see-description btn btn-primary btn-sm" onclick="clicar()">Ver
+                                                    características</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <section class="apply-for-loan">
+                                    <h3 style="text-align: center;">Ficou interessado(a)?<br>
+                                        <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            SOLICITAR EMPRÉSTIMO
+                                        </button>
+
+                                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        ...
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Save
+                                                            changes</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </h3>
+                                    <div style="width: 100%; text-align: center;">
+                                        <a href="#">Ver contrato</a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="book-description" id="book-description">
+                <div class="accordion mt-4" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button bg-primary" style="color: white;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                Descrição do livro
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Isto é apenas uma descrição demonstrativa deste livro demonstrativo de um autor
+                                demonstrativo.
+                                Isto é apenas uma descrição demonstrativa deste livro demonstrativo de um autor
+                                demonstrativo.
+                                Isto é apenas uma descrição demonstrativa deste livro demonstrativo de um autor
+                                demonstrativo.
+                                Isto é apenas uma descrição demonstrativa deste livro demonstrativo de um autor
+                                demonstrativo.
+                                Isto é apenas uma descrição demonstrativa deste livro demonstrativo de um autor
+                                demonstrativo.
+                                Isto é apenas uma descrição demonstrativa deste livro demonstrativo de um autor
+                                demonstrativo.
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="book-features" id="book-features">
+                <div class="accordion mt-4" id="accordionExampleTwo">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed bg-primary" style="color: white;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                                aria-controls="collapseTwo">
+                                Características do livro
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExampleTwo">
+                            <div class="accordion-body">
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td>Característica 1</th>
+                                            <td>Característica 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Característica 2</td>
+                                            <td>Característica 2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Característica 3</td>
+                                            <td>Característica 3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Característica 4</td>
+                                            <td>Característica 4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Característica 5</td>
+                                            <td>Característica 5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Característica 6</td>
+                                            <td>Característica 6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Característica 7</td>
+                                            <td>Característica 7</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </section>
+
+        <hr id="categories">
+
+        <section class="categories">
+            <h1 style="text-align: center;">Categorias</h1>
+            <div class="accordion mt-3" id="accordionExample">
+              <div class="accordion-item">
+                <div class="table-container">
+                  <table class="table">
+                    <tr>
+                      <td>
+                        <div class="card" style="width: 18rem;">
+                          <img src="images/demo-category.png" style="width: 150px; margin-left: 24%;"
+                            class="card-img-top mt-3" alt="demo-category">
+                          <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa</h5>
+                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="card" style="width: 18rem;">
+                          <img src="images/demo-category.png" style="width: 150px; margin-left: 24%;"
+                            class="card-img-top mt-3" alt="demo-category">
+                          <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa</h5>
+                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="card" style="width: 18rem;">
+                          <img src="images/demo-category.png" style="width: 150px; margin-left: 24%;"
+                            class="card-img-top mt-3" alt="demo-category">
+                          <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa</h5>
+                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="card" style="width: 18rem;">
+                          <img src="images/demo-category.png" style="width: 150px; margin-left: 24%;"
+                            class="card-img-top mt-3" alt="demo-category">
+                          <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa</h5>
+                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="card" style="width: 18rem;">
+                          <img src="images/demo-category.png" style="width: 150px; margin-left: 24%;"
+                            class="card-img-top mt-3" alt="demo-category">
+                          <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa</h5>
+                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="card" style="width: 18rem;">
+                          <img src="images/demo-category.png" style="width: 150px; margin-left: 23%;"
+                            class="card-img-top mt-3" alt="demo-category">
+                          <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa</h5>
+                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="card" style="width: 18rem;">
+                          <img src="images/demo-category.png" style="width: 150px; margin-left: 23%;"
+                            class="card-img-top mt-3" alt="demo-category">
+                          <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa</h5>
+                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="card" style="width: 18rem;">
+                          <img src="images/demo-category.png" style="width: 150px; margin-left: 23%;"
+                            class="card-img-top mt-3" alt="demo-category">
+                          <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa</h5>
+                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="card" style="width: 18rem;">
+                          <img src="images/demo-category.png" style="width: 150px; margin-left: 23%;"
+                            class="card-img-top mt-3" alt="demo-category">
+                          <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa</h5>
+                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="card" style="width: 18rem;">
+                          <img src="images/demo-category.png" style="width: 150px; margin-left: 23%;"
+                            class="card-img-top mt-3" alt="demo-category">
+                          <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa</h5>
+                            <a href="#" style="margin-left: 28%;" class="btn btn-primary">VER LIVROS</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+          </section>
+
+        <footer id="credits" style="margin-top: 20px;">
+            <div class="card text-center">
+                <div class="card-header bg-primary" style="color: white;">
+                    <p style="margin: 0 auto;">Créditos ao desenvolvedor</p>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">JOAB HENRIQUE MARQUES DA SILVA</h5>
+                    <p class="card-text">Aluno do 2º ano do Ensino Médio Integrado ao Curso Técnico em
+                        Desenvolvimento
+                        de Sistemas.</p>
+                    <a href="https://joabhenrique.github.io/portfolio/" target="blank"
+                        class="btn btn-primary">PORTFÓLIO</a>
+                </div>
+                <div class="card-footer text-muted bg-primary">
+                    <a href="index.html" style="color: white; margin: 0 auto;">www.etepalmares.com.br</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
