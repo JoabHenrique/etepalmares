@@ -32,6 +32,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
+                            <a href="index.html" class="btn btn-light mt-2" style="width: 150px;">PORTAL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="biblioteca.html" class="btn btn-light mt-2" style="width: 150px;">BIBLIOTECA</a>
+                        </li>
+                        <li class="nav-item">
                             <a href="#categories" class="btn btn-light mt-2" style="width: 150px;">CATEGORIAS</a>
                         </li>
                 </div>
@@ -45,7 +51,8 @@
                 <div class="card mt-3" style="width: 100%;">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="images/demo-book.jpeg" style="width: 70%; margin-left: 13%;" class="img-fluid rounded-start" alt="demo-book">
+                            <img src="images/demo-book.jpeg" style="width: 70%; margin-left: 13%;"
+                                class="img-fluid rounded-start" alt="demo-book">
                         </div>
 
                         <div class="col-md-8">
@@ -73,22 +80,23 @@
                                             <td>X exemplares</td>
                                         </tr>
                                         <tr>
-                                            <td>Descrição</td>
-                                            <td><a href="#book-description"
+                                            <td style="padding-top: 10px;">Descrição</td>
+                                            <!-- Class nav-item prevents redirect view on link -->
+                                            <td class="nav-item"><a href="#book-description"
                                                     class="btn-see-description btn btn-primary btn-sm">Ver
                                                     descrição</a></td>
                                         </tr>
                                         <tr>
-                                            <td>Características</td>
-                                            <td><a href="#book-features"
-                                                    class="btn-see-description btn btn-primary btn-sm" onclick="clicar()">Ver
+                                            <td style="padding-top: 10px;">Características</td>
+                                            <td class="nav-item"><a href="#book-features"
+                                                    class="btn-see-description btn btn-primary btn-sm">Ver
                                                     características</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-
+                        
                         <section class="apply-for-loan mb-3">
                             <h3 style="text-align: center; margin-top: -20px;">Ficou interessado(a)?<br>
                                 <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal"
@@ -100,19 +108,43 @@
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <div class="modal-header bg-primary">
+                                                <h5 class="modal-title" style="color: white;" id="exampleModalLabel">SOLICITAR EMPRÉSTIMO</h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
-                                                ...
+                                                <div class="card mb-3" style="width: 100%;">
+                                                    <img src="images/demo-book.jpeg" style="width: 150px; margin: 0 auto;" class="card-img-top mt-3"
+                                                      alt="demo-book">
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">Nome Demonstrativo</h5>
+                                                      <footer style="font-size: 15px;" class="blockquote-footer mt-1">Autor Demonstrativo</footer>
+                                                    </div>
+                                                  </div>
+
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                                    <label style="font-size: 20px;" for="floatingInput">Matrícula</label>
+                                                  </div>
+
+                                                  <div class="form-floating">
+                                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                                    <label style="font-size: 20px;" for="floatingPassword">Código de confirmação</label>
+                                                  </div>
+
+                                                  <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                                                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                                                    <label class="btn btn-outline-primary mt-3" for="btncheck1">Confirmo que li e concordo com o contrato de empréstimo</label>
+                                                  </div>
+                                                  <div style="width: 100%; font-size: 15px; text-align: center;">
+                                                    <a href="#">Ver contrato</a>
+                                                </div>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary"
-                                                    data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save
-                                                    changes</button>
+                                                    data-bs-dismiss="modal">Cancelar</button>
+                                                <a type="button" class="btn btn-primary">CONTINUAR</a>
                                             </div>
                                         </div>
                                     </div>
@@ -122,7 +154,7 @@
                                 <a href="#">Ver contrato</a>
                             </div>
                         </section>
-                        
+
                     </div>
             </section>
 
@@ -207,120 +239,799 @@
             </section>
         </section>
 
+        <hr>
+
+        <section class="other-books">
+            <section class="get-book">
+                <h1 class="bg-primary rounded-3 mt-3" id="h1-name-library"
+                    style="text-align: center; color: white; margin-top: 10px;">Biblioteca
+                    Ariano Suassuna<br>
+                    <form class="d-flex pb-2">
+                        <input class="form-control me-1 ml-1" type="search" placeholder="Qual livro você procura?"
+                            aria-label="Search">
+                        <button class="btn btn-light mr-1" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+
+                </h1>
+            </section>
+
+            <section class="more-books-1">
+                <div class="accordion mt-3" id="accordionExample">
+                    <div class="accordion-item">
+                        <li class="list-group-item active" aria-current="true">Mais de Categoria 1</li>
+                        <div class="table-container">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="more-books-2">
+                <div class="accordion mt-3" id="accordionExample">
+                    <div class="accordion-item">
+                        <li class="list-group-item active" aria-current="true">Mais de Categoria 2</li>
+                        <div class="table-container">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="more-books-3">
+                <div class="accordion mt-3" id="accordionExample">
+                    <div class="accordion-item">
+                        <li class="list-group-item active" aria-current="true">Mais de Categoria 3</li>
+                        <div class="table-container">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="more-books-4">
+                <div class="accordion mt-3" id="accordionExample">
+                    <div class="accordion-item">
+                        <li class="list-group-item active" aria-current="true">Mais de Autor Demonstrativo</li>
+                        <div class="table-container">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="images/demo-book.jpeg" style="width: 150px; margin-left: 22%;"
+                                                class="card-img-top mt-3" alt="demo-book">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Nome Demonstrativo</h5>
+                                                <footer class="blockquote-footer">Autor Demonstrativo</footer>
+                                                <p class="card-text">Isto é apenas um resumo demonstrativo sobre este
+                                                    livro demonstrativo de um
+                                                    autor demonstrativo.</p>
+                                                <a href="livro.html" class="btn-know-more btn btn-primary">SAIBA
+                                                    MAIS</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+            </section>
+        </section>
+
         <hr id="categories">
 
         <section class="categories">
             <h1 style="text-align: center;">Categorias</h1>
             <div class="accordion mt-3" id="accordionExample">
-              <div class="accordion-item">
-                <div class="table-container">
-                  <table class="table">
-                    <tr>
-                      <td>
-                        <div class="card" style="width: 18rem;">
-                          <img src="images/demo-category.png" style="width: 150px; margin-left: 24%;"
-                            class="card-img-top mt-3" alt="demo-category">
-                          <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa</h5>
-                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="card" style="width: 18rem;">
-                          <img src="images/demo-category.png" style="width: 150px; margin-left: 24%;"
-                            class="card-img-top mt-3" alt="demo-category">
-                          <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa</h5>
-                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="card" style="width: 18rem;">
-                          <img src="images/demo-category.png" style="width: 150px; margin-left: 24%;"
-                            class="card-img-top mt-3" alt="demo-category">
-                          <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa</h5>
-                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="card" style="width: 18rem;">
-                          <img src="images/demo-category.png" style="width: 150px; margin-left: 24%;"
-                            class="card-img-top mt-3" alt="demo-category">
-                          <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa</h5>
-                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="card" style="width: 18rem;">
-                          <img src="images/demo-category.png" style="width: 150px; margin-left: 24%;"
-                            class="card-img-top mt-3" alt="demo-category">
-                          <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa</h5>
-                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="card" style="width: 18rem;">
-                          <img src="images/demo-category.png" style="width: 150px; margin-left: 23%;"
-                            class="card-img-top mt-3" alt="demo-category">
-                          <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa</h5>
-                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="card" style="width: 18rem;">
-                          <img src="images/demo-category.png" style="width: 150px; margin-left: 23%;"
-                            class="card-img-top mt-3" alt="demo-category">
-                          <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa</h5>
-                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="card" style="width: 18rem;">
-                          <img src="images/demo-category.png" style="width: 150px; margin-left: 23%;"
-                            class="card-img-top mt-3" alt="demo-category">
-                          <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa</h5>
-                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="card" style="width: 18rem;">
-                          <img src="images/demo-category.png" style="width: 150px; margin-left: 23%;"
-                            class="card-img-top mt-3" alt="demo-category">
-                          <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa</h5>
-                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="card" style="width: 18rem;">
-                          <img src="images/demo-category.png" style="width: 150px; margin-left: 23%;"
-                            class="card-img-top mt-3" alt="demo-category">
-                          <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa</h5>
-                            <a href="#" style="margin-left: 28%;" class="btn btn-primary">VER LIVROS</a>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
+                <div class="accordion-item">
+                    <div class="table-container">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/demo-category.png" style="width: 150px; margin-left: 24%;"
+                                            class="card-img-top mt-3" alt="demo-category">
+                                        <div class="card-body">
+                                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa
+                                            </h5>
+                                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/demo-category.png" style="width: 150px; margin-left: 24%;"
+                                            class="card-img-top mt-3" alt="demo-category">
+                                        <div class="card-body">
+                                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa
+                                            </h5>
+                                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/demo-category.png" style="width: 150px; margin-left: 24%;"
+                                            class="card-img-top mt-3" alt="demo-category">
+                                        <div class="card-body">
+                                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa
+                                            </h5>
+                                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/demo-category.png" style="width: 150px; margin-left: 24%;"
+                                            class="card-img-top mt-3" alt="demo-category">
+                                        <div class="card-body">
+                                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa
+                                            </h5>
+                                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/demo-category.png" style="width: 150px; margin-left: 24%;"
+                                            class="card-img-top mt-3" alt="demo-category">
+                                        <div class="card-body">
+                                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa
+                                            </h5>
+                                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/demo-category.png" style="width: 150px; margin-left: 23%;"
+                                            class="card-img-top mt-3" alt="demo-category">
+                                        <div class="card-body">
+                                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa
+                                            </h5>
+                                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/demo-category.png" style="width: 150px; margin-left: 23%;"
+                                            class="card-img-top mt-3" alt="demo-category">
+                                        <div class="card-body">
+                                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa
+                                            </h5>
+                                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/demo-category.png" style="width: 150px; margin-left: 23%;"
+                                            class="card-img-top mt-3" alt="demo-category">
+                                        <div class="card-body">
+                                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa
+                                            </h5>
+                                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/demo-category.png" style="width: 150px; margin-left: 23%;"
+                                            class="card-img-top mt-3" alt="demo-category">
+                                        <div class="card-body">
+                                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa
+                                            </h5>
+                                            <a href="#" class="btn-see-books btn btn-primary">VER LIVROS</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="images/demo-category.png" style="width: 150px; margin-left: 23%;"
+                                            class="card-img-top mt-3" alt="demo-category">
+                                        <div class="card-body">
+                                            <h5 class="card-title" style="text-align: center;">Categoria Demonstrativa
+                                            </h5>
+                                            <a href="#" style="margin-left: 28%;" class="btn btn-primary">VER LIVROS</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-              </div>
-          </section>
+        </section>
 
         <footer id="credits" style="margin-top: 20px;">
             <div class="card text-center">
