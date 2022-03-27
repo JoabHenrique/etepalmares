@@ -33,6 +33,14 @@
     -webkit-border-radius: 10px;
 }
 
+/* Responsiveness */
+
+@media (max-width: 430px) {
+    .btn-access-library {
+        margin-left: 18%;
+    }
+}
+
 @media (max-width: 476px) {
     .navbar-brand {
         margin: 0 38%;
@@ -129,5 +137,14 @@
 
     .navbar-toggler {
         margin-left: 41%;
+    }
+}
+
+/* Responsiveness of the modal */
+
+@media (max-width: 575px) {
+    .modal-dialog {
+        margin-right: 3rem;
+        margin-top: 50px;
     }
 }
