@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETE Palmares - Confirmar Empréstimo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" href="images/logo_ete.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="biblioteca.html">
+                    <img src="images/logo_ete.png" alt="logo_ete" width="100" height="75">
+                </a>
+
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="btn btn-light mt-2" style="width: 150px;">PORTAL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="biblioteca.html" class="btn btn-light mt-2" style="width: 150px;">BIBLIOTECA</a>
+                        </li>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <h1 class="mt-3" style="text-align: center;">Confirmar Pedido</h1>
+            <p style="text-align: center;">Confira os dados e confirme o pedido</p>
+
+            <section class="book-library-information">
+                <div class="card mt-3" style="width: 100%;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/demo-book.jpeg" style="width: 60%; margin-left: 19%;"
+                                class="img-fluid rounded-start mt-3" alt="demo-book">
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Sobre o livro</h5>
+
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td>Nome</th>
+                                            <td>Nome Demonstrativo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Autor</td>
+                                            <td>Autor Demonstrativo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ano</td>
+                                            <td>YYYY</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h5 class="card-title">Sobre o(a) estudante</h5>
+
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td>Nome</th>
+                                            <td>Nome Demonstrativo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Matrícula</td>
+                                            <td>XXXXXXXX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Turma</td>
+                                            <td>Xº DEM X</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h5 class="card-title">Coleta e devolução</h5>
+
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td>Período de coleta</th>
+                                            <td>XX/MM/YYYY à XX/MM/YYYY</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Data de devolução</td>
+                                            <td>X dias após a coleta</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <h3 style="text-align: center; margin-top: -20px;">
+                            <button type="button" class="btn btn-primary mt-2 mb-2" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                CONFIRMAR EMPRÉSTIMO
+                            </button>
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-primary">
+                                            <h5 class="modal-title" style="color: white;" id="exampleModalLabel">
+                                                PEDIDO CONFIRMADO</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3>O seu livro lhe espera!</h3>
+                                            <div class="card mb-3" style="width: 100%;">
+                                                <img src="images/demo-book.jpeg" style="width: 150px; margin: 0 auto;"
+                                                    class="card-img-top mt-3" alt="demo-book">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nome Demonstrativo</h5>
+                                                    <footer style="font-size: 15px;" class="blockquote-footer mt-1">
+                                                        Autor Demonstrativo</footer>
+
+                                                        <a href="livro.html" class="btn btn-primary">VER LIVRO</a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Na biblioteca, solicite a coleta do seu livro à equipe de monitoria.</p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="biblioteca.html" class="btn btn-primary">OK</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </h3>
+            </section>
+        </div>
+    </section>
+
+    <br>
+
+    <footer id="credits">
+        <div class="card text-center">
+            <div class="card-header bg-primary" style="color: white;">
+                <p style="margin: 0 auto;">Créditos ao desenvolvedor</p>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">JOAB HENRIQUE MARQUES DA SILVA</h5>
+                <p class="card-text">Aluno do 2º ano do Ensino Médio Integrado ao Curso Técnico em
+                    Desenvolvimento
+                    de Sistemas.</p>
+                <a href="https://joabhenrique.github.io/portfolio/" target="blank" class="btn btn-primary">PORTFÓLIO</a>
+            </div>
+            <div class="card-footer text-muted bg-primary">
+                <a href="index.html" style="color: white; margin: 0 auto;">www.etepalmares.com.br</a>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
