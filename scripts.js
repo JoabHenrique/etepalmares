@@ -11,7 +11,7 @@ const menuItems = document.querySelectorAll('.nav-item a[href^="#"]');
 
         function scrollToIdOnClick(event) {
             event.preventDefault();
-            const to = getScrollTopByHref(event.target) + 300;
+            const to = getScrollTopByHref(event.target);
             scrollToPosition(to);
         }
 
