@@ -39,9 +39,33 @@ html {
 
 /* Responsiveness */
 
-@media (max-width: 430px) {
-    .btn-access-library {
-        margin-left: 18%;
+@media (max-width: 575px) {
+    #responsiveness-category{
+        margin-left: 23%;
+    }
+}
+
+@media (max-width: 540px) {
+    #responsiveness-category {
+        margin-left: 21%;
+    }
+}
+
+@media (max-width: 505px) {
+    #responsiveness-category {
+        margin-left: 19%;
+    }
+}
+
+@media (max-width: 490px) {
+    #responsiveness-category {
+        margin-left: 17%;
+    }
+}
+
+@media (max-width: 470px) {
+    #responsiveness-category {
+        margin-left: 15%;
     }
 }
 
@@ -68,9 +92,19 @@ html {
     }
 }
 
+@media (max-width: 435px) {
+    #responsiveness-category {
+        margin-left: 13%;
+    }
+}
+
 @media (max-width: 430px) {
     .btn-access-library {
         margin-left: 18%;
+    }
+
+    #responsiveness-category {
+        margin-left: 12%;
     }
 }
 
@@ -82,6 +116,10 @@ html {
     .btn-access-library {
         margin-left: 17%;
     }
+
+    #responsiveness-category {
+        margin-left: 10%;
+    }
 }
 
 @media (max-width: 385px) {
@@ -91,6 +129,10 @@ html {
 
     .navbar-toggler {
         margin-left: 43%;
+    }
+
+    #responsiveness-category {
+        margin-left: 8%;
     }
 }
 
@@ -102,11 +144,19 @@ html {
     .btn-access-library {
         margin-left: 13%;
     }
+
+    #responsiveness-category {
+        margin-left: 6%;
+    }
 }
 
 @media (max-width: 350px) {
     .btn-access-library {
         margin-left: 12%;
+    }
+
+    #responsiveness-category {
+        margin-left: 3%;
     }
 }
 
@@ -128,6 +178,10 @@ html {
     .navbar-toggler {
         margin-left: 42%;
     }
+
+    #responsiveness-category {
+        margin-left: 1%;
+    }
 }
 
 @media (max-width: 320px) {
@@ -141,6 +195,10 @@ html {
 
     .navbar-toggler {
         margin-left: 41%;
+    }
+
+    #responsiveness-category {
+        margin-left: 0;
     }
 }
 
