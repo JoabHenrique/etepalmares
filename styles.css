@@ -7,11 +7,11 @@ html {
 }
 
 .btn-know-more {
-    margin-left: 28%;
+    width: 100%;
 }
 
 .btn-see-books {
-    margin-left: 28%;
+    width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -39,33 +39,71 @@ html {
 
 /* Responsiveness */
 
+@media (max-width: 991px) {
+    .col-sm-2 {
+        width: 140px;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-sm-2 {
+        width: 125px;
+    }
+}
+
 @media (max-width: 575px) {
-    #responsiveness-category{
+    .col-sm-2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    #responsiveness-card {
         margin-left: 21%;
+    }
+
+    #responsiveness-card-pa {
+        margin-left: 19%;
     }
 }
 
 @media (max-width: 540px) {
-    #responsiveness-category {
+    #responsiveness-card {
         margin-left: 20%;
     }
-}
 
-@media (max-width: 505px) {
-    #responsiveness-category {
+    #responsiveness-card-pa {
         margin-left: 18%;
     }
 }
 
+@media (max-width: 505px) {
+    #responsiveness-card {
+        margin-left: 18%;
+    }
+
+    #responsiveness-card-pa {
+        margin-left: 16%;
+    }
+}
+
 @media (max-width: 490px) {
-    #responsiveness-category {
+    #responsiveness-card {
         margin-left: 17%;
+    }
+
+    #responsiveness-card-pa {
+        margin-left: 15%;
     }
 }
 
 @media (max-width: 470px) {
-    #responsiveness-category {
+    #responsiveness-card {
         margin-left: 16%;
+    }
+
+    #responsiveness-card-pa {
+        margin-left: 14%;
     }
 }
 
@@ -98,14 +136,22 @@ html {
 }
 
 @media (max-width: 460px) {
-    #responsiveness-category {
+    #responsiveness-card {
         margin-left: 14.5%;
+    }
+
+    #responsiveness-card-pa {
+        margin-left: 12.5%;
     }
 }
 
 @media (max-width: 440px) {
-    #responsiveness-category {
+    #responsiveness-card {
         margin-left: 13%;
+    }
+
+    #responsiveness-card-pa {
+        margin-left: 11%;
     }
 }
 
@@ -114,14 +160,22 @@ html {
         margin-left: 18%;
     }
 
-    #responsiveness-category {
+    #responsiveness-card {
         margin-left: 12%;
+    }
+
+    #responsiveness-card-pa {
+        margin-left: 10%;
     }
 }
 
 @media (max-width: 415px) {
-    #responsiveness-category {
+    #responsiveness-card {
         margin-left: 11%;
+    }
+
+    #responsiveness-card-pa {
+        margin-left: 9%;
     }
 }
 
@@ -134,8 +188,12 @@ html {
         margin-left: 17%;
     }
 
-    #responsiveness-category {
+    #responsiveness-card {
         margin-left: 9%;
+    }
+
+    #responsiveness-card-pa {
+        margin-left: 7%;
     }
 }
 
@@ -152,8 +210,12 @@ html {
         margin-left: 42%;
     }
 
-    #responsiveness-category {
+    #responsiveness-card {
         margin-left: 8%;
+    }
+
+    #responsiveness-card-pa {
+        margin-left: 6%;
     }
 }
 
@@ -166,8 +228,12 @@ html {
         margin-left: 13%;
     }
 
-    #responsiveness-category {
+    #responsiveness-card {
         margin-left: 6%;
+    }
+
+    #responsiveness-card-pa {
+        margin-left: 2%;
     }
 }
 
@@ -176,8 +242,12 @@ html {
         margin-left: 12%;
     }
 
-    #responsiveness-category {
+    #responsiveness-card {
         margin-left: 4%;
+    }
+
+    #responsiveness-card-pa {
+        margin-left: 0%;
     }
 }
 
@@ -190,8 +260,12 @@ html {
         margin-left: 11%;
     }
 
-    #responsiveness-category {
+    #responsiveness-card {
         margin-left: 2%;
+    }
+
+    #responsiveness-card-pa {
+        margin-left: -2%;
     }
 }
 
@@ -208,12 +282,12 @@ html {
         margin-left: 41%;
     }
 
-    #responsiveness-category {
+    #responsiveness-card {
         margin-left: 1%;
     }
 }
 @media (max-width: 325px) {
-    #responsiveness-category {
+    #responsiveness-card {
         margin-left: 0;
     }
 }
