@@ -41,19 +41,19 @@ html {
 
 @media (max-width: 575px) {
     #responsiveness-category{
-        margin-left: 23%;
+        margin-left: 21%;
     }
 }
 
 @media (max-width: 540px) {
     #responsiveness-category {
-        margin-left: 21%;
+        margin-left: 20%;
     }
 }
 
 @media (max-width: 505px) {
     #responsiveness-category {
-        margin-left: 19%;
+        margin-left: 18%;
     }
 }
 
@@ -65,7 +65,7 @@ html {
 
 @media (max-width: 470px) {
     #responsiveness-category {
-        margin-left: 15%;
+        margin-left: 16%;
     }
 }
 
@@ -92,7 +92,13 @@ html {
     }
 }
 
-@media (max-width: 435px) {
+@media (max-width: 460px) {
+    #responsiveness-category {
+        margin-left: 14.5%;
+    }
+}
+
+@media (max-width: 440px) {
     #responsiveness-category {
         margin-left: 13%;
     }
@@ -108,6 +114,12 @@ html {
     }
 }
 
+@media (max-width: 415px) {
+    #responsiveness-category {
+        margin-left: 11%;
+    }
+}
+
 @media (max-width: 400px) {
     .navbar-brand {
         margin: 0 36%;
@@ -118,11 +130,11 @@ html {
     }
 
     #responsiveness-category {
-        margin-left: 10%;
+        margin-left: 9%;
     }
 }
 
-@media (max-width: 385px) {
+@media (max-width: 390px) {
     .btn-access-library {
         margin-left: 13%;
     }
@@ -136,7 +148,7 @@ html {
     }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 375px) {
     .navbar-brand {
         margin: 0 35%;
     }
@@ -150,13 +162,13 @@ html {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
     .btn-access-library {
         margin-left: 12%;
     }
 
     #responsiveness-category {
-        margin-left: 3%;
+        margin-left: 4%;
     }
 }
 
@@ -167,6 +179,10 @@ html {
 
     .btn-access-library {
         margin-left: 11%;
+    }
+
+    #responsiveness-category {
+        margin-left: 2%;
     }
 }
 
@@ -183,6 +199,11 @@ html {
         margin-left: 1%;
     }
 }
+@media (max-width: 325px) {
+    #responsiveness-category {
+        margin-left: 0;
+    }
+}
 
 @media (max-width: 320px) {
     .navbar-brand {
@@ -197,9 +218,6 @@ html {
         margin-left: 41%;
     }
 
-    #responsiveness-category {
-        margin-left: 0;
-    }
 }
 
 /* Responsiveness of the modal */
