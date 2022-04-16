@@ -68,15 +68,13 @@ html {
         margin-bottom: 10px;
         font-size: 100%;
     }
-}
 
-@media (max-width: 575px) {
     #responsiveness-card {
         margin-left: 21%;
     }
 
     #responsiveness-card-pa {
-        margin-left: 19%;
+        margin-left: 21%;
     }
 }
 
@@ -86,7 +84,7 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: 18%;
+        margin-left: 20%;
     }
 
     .dropdown-pa {
@@ -100,7 +98,7 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: 16%;
+        margin-left: 17%;
     }
 }
 
@@ -110,21 +108,11 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: 15%;
+        margin-left: 16%;
     }
 
     .dropdown-pa {
         width: 94.8%;
-    }
-}
-
-@media (max-width: 470px) {
-    #responsiveness-card {
-        margin-left: 16%;
-    }
-
-    #responsiveness-card-pa {
-        margin-left: 14%;
     }
 }
 
@@ -160,13 +148,23 @@ html {
     }
 }
 
+@media (max-width: 470px) {
+    #responsiveness-card {
+        margin-left: 16%;
+    }
+
+    #responsiveness-card-pa {
+        margin-left: 15%;
+    }
+}
+
 @media (max-width: 460px) {
     #responsiveness-card {
         margin-left: 14.5%;
     }
 
     #responsiveness-card-pa {
-        margin-left: 12.5%;
+        margin-left: 13.5%;
     }
 }
 
@@ -182,7 +180,7 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: 11%;
+        margin-left: 12%;
     }
 }
 
@@ -196,7 +194,7 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: 10%;
+        margin-left: 11%;
     }
 
     .dropdown-pa {
@@ -210,7 +208,7 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: 9%;
+        margin-left: 10%;
     }
 }
 
@@ -228,7 +226,7 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: 7%;
+        margin-left: 9%;
     }
 
     .dropdown-pa {
@@ -254,7 +252,7 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: 5%;
+        margin-left: 7%;
     }
 }
 
@@ -272,7 +270,7 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: 5%;
+        margin-left: 6%;
     }
 
     .dropdown-pa {
@@ -290,7 +288,7 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: 2.5%;
+        margin-left: 3%;
     }
 
     .dropdown-pa {
@@ -312,7 +310,7 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: 0.5%;
+        margin-left: 1%;
     }
 }
 
@@ -331,6 +329,10 @@ html {
 
     #responsiveness-card {
         margin-left: 1%;
+    }
+
+    #responsiveness-card-pa {
+        margin-left: 0%;
     }
 
     .dropdown-pa {
