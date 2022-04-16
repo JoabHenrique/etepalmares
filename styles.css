@@ -272,7 +272,7 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: 2.5%;
+        margin-left: 5%;
     }
 
     .dropdown-pa {
@@ -290,7 +290,7 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: 0%;
+        margin-left: 2.5%;
     }
 
     .dropdown-pa {
@@ -312,7 +312,7 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: -2%;
+        margin-left: 0.5%;
     }
 }
 
@@ -342,6 +342,10 @@ html {
     #responsiveness-card {
         margin-left: 0;
     }
+
+    #responsiveness-card-pa {
+        margin-left: -1%;
+    }
 }
 
 @media (max-width: 320px) {
@@ -359,6 +363,10 @@ html {
 
     .pa-exit-btn {
         margin-left: 40%;
+    }
+
+    #responsiveness-card-pa {
+        margin-left: -2%;
     }
 
 }
