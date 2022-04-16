@@ -39,6 +39,12 @@ html {
 
 /* Responsiveness */
 
+@media (max-width: 991px) and (min-width: 576px) {
+    #responsiveness-card-ma-historic {
+        width: 0px;
+    }
+}
+
 @media (max-width: 991px) {
     .col-sm-2 {
         width: 140px;
@@ -73,6 +79,10 @@ html {
         margin-left: 21%;
     }
 
+    #responsiveness-card-ma-student {
+        margin-left: 21%;
+    }
+
     #responsiveness-card-pa {
         margin-left: 21%;
     }
@@ -80,6 +90,10 @@ html {
 
 @media (max-width: 540px) {
     #responsiveness-card {
+        margin-left: 20%;
+    }
+
+    #responsiveness-card-ma-student {
         margin-left: 20%;
     }
 
@@ -97,6 +111,10 @@ html {
         margin-left: 18%;
     }
 
+    #responsiveness-card-ma-student {
+        margin-left: 17%;
+    }
+
     #responsiveness-card-pa {
         margin-left: 17%;
     }
@@ -105,6 +123,10 @@ html {
 @media (max-width: 490px) {
     #responsiveness-card {
         margin-left: 17%;
+    }
+
+    #responsiveness-card-ma-student {
+        margin-left: 16%;
     }
 
     #responsiveness-card-pa {
@@ -153,6 +175,10 @@ html {
         margin-left: 16%;
     }
 
+    #responsiveness-card-ma-student {
+        margin-left: 15%;
+    }
+
     #responsiveness-card-pa {
         margin-left: 15%;
     }
@@ -161,6 +187,10 @@ html {
 @media (max-width: 460px) {
     #responsiveness-card {
         margin-left: 14.5%;
+    }
+
+    #responsiveness-card-ma-student {
+        margin-left: 13.5%;
     }
 
     #responsiveness-card-pa {
@@ -179,6 +209,10 @@ html {
         margin-left: 13%;
     }
 
+    #responsiveness-card-ma-student {
+        margin-left: 12%;
+    }
+
     #responsiveness-card-pa {
         margin-left: 12%;
     }
@@ -193,6 +227,10 @@ html {
         margin-left: 12%;
     }
 
+    #responsiveness-card-ma-student {
+        margin-left: 11%;
+    }
+
     #responsiveness-card-pa {
         margin-left: 11%;
     }
@@ -205,6 +243,10 @@ html {
 @media (max-width: 415px) {
     #responsiveness-card {
         margin-left: 11%;
+    }
+
+    #responsiveness-card-ma-student {
+        margin-left: 9.5%;
     }
 
     #responsiveness-card-pa {
@@ -223,6 +265,10 @@ html {
 
     #responsiveness-card {
         margin-left: 9%;
+    }
+
+    #responsiveness-card-ma-student {
+        margin-left: 8.5%;
     }
 
     #responsiveness-card-pa {
@@ -251,6 +297,10 @@ html {
         margin-left: 8%;
     }
 
+    #responsiveness-card-ma-student {
+        margin-left: 7%;
+    }
+
     #responsiveness-card-pa {
         margin-left: 7%;
     }
@@ -269,12 +319,22 @@ html {
         margin-left: 6%;
     }
 
+    #responsiveness-card-ma-student {
+        margin-left: 5%;
+    }
+
     #responsiveness-card-pa {
         margin-left: 6%;
     }
 
     .dropdown-pa {
         width: 92.8%;
+    }
+}
+
+@media (max-width: 367px) {
+    #responsiveness-card-ma-student {
+        margin-left: 2.5%;
     }
 }
 
@@ -287,12 +347,22 @@ html {
         margin-left: 4%;
     }
 
+    #responsiveness-card-ma-student {
+        margin-left: 2%;
+    }
+
     #responsiveness-card-pa {
         margin-left: 3%;
     }
 
     .dropdown-pa {
         width: 92.4%;
+    }
+}
+
+@media (max-width: 350px) {
+    #responsiveness-card-ma-student {
+        margin-left: 0%;
     }
 }
 
@@ -370,7 +440,6 @@ html {
     #responsiveness-card-pa {
         margin-left: -2%;
     }
-
 }
 
 /* Responsiveness of the modal */
