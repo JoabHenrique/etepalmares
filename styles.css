@@ -44,7 +44,7 @@ html {
         margin-left: 27.5%;
     }
 
-    .col-12 {
+    #my-account-card-responsiveness {
         width: 100%;
     }
 
@@ -215,7 +215,7 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: 13.5%;
+        margin-left: 14%;
     }
 }
 
@@ -253,7 +253,7 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: 11%;
+        margin-left: 11.5%;
     }
 
     .dropdown-pa {
@@ -271,7 +271,7 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: 10%;
+        margin-left: 10.3%;
     }
 }
 
@@ -323,7 +323,7 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: 7%;
+        margin-left: 7.5%;
     }
 }
 
@@ -373,7 +373,7 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: 3%;
+        margin-left: 3.8%;
     }
 
     .dropdown-pa {
@@ -401,7 +401,7 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: 1%;
+        margin-left: 1.5%;
     }
 }
 
@@ -423,7 +423,7 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: 0%;
+        margin-left: 0.35%;
     }
 
     .dropdown-pa {
@@ -459,6 +459,6 @@ html {
     }
 
     #responsiveness-card-pa {
-        margin-left: -2%;
+        margin-left: -1.5%;
     }
 }
