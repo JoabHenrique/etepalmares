@@ -40,8 +40,16 @@ html {
 /* Responsiveness */
 
 @media (max-width: 991px) and (min-width: 576px) {
+    #responsiveness-card-ma-student {
+        margin-left: 27.5%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
     #responsiveness-card-ma-historic {
-        width: 0px;
+        margin-left: 13%;
     }
 }
 
@@ -58,6 +66,10 @@ html {
 
     .btn-communication {
         font-size: 13px;
+    }
+
+    #responsiveness-card-ma-student {
+        margin-left: 19.5%;
     }
 }
 
@@ -86,6 +98,15 @@ html {
     #responsiveness-card-pa {
         margin-left: 21%;
     }
+
+    #responsiveness-card-ma-historic {
+        margin-left: 13%;
+    }
+
+    .modal-dialog {
+        margin-right: 3rem;
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 540px) {
@@ -94,7 +115,7 @@ html {
     }
 
     #responsiveness-card-ma-student {
-        margin-left: 20%;
+        margin-left: 18.5%;
     }
 
     #responsiveness-card-pa {
@@ -112,7 +133,7 @@ html {
     }
 
     #responsiveness-card-ma-student {
-        margin-left: 17%;
+        margin-left: 16%;
     }
 
     #responsiveness-card-pa {
@@ -126,7 +147,7 @@ html {
     }
 
     #responsiveness-card-ma-student {
-        margin-left: 16%;
+        margin-left: 15%;
     }
 
     #responsiveness-card-pa {
@@ -176,7 +197,7 @@ html {
     }
 
     #responsiveness-card-ma-student {
-        margin-left: 15%;
+        margin-left: 14%;
     }
 
     #responsiveness-card-pa {
@@ -190,7 +211,7 @@ html {
     }
 
     #responsiveness-card-ma-student {
-        margin-left: 13.5%;
+        margin-left: 12.5%;
     }
 
     #responsiveness-card-pa {
@@ -210,7 +231,7 @@ html {
     }
 
     #responsiveness-card-ma-student {
-        margin-left: 12%;
+        margin-left: 11%;
     }
 
     #responsiveness-card-pa {
@@ -228,7 +249,7 @@ html {
     }
 
     #responsiveness-card-ma-student {
-        margin-left: 11%;
+        margin-left: 10%;
     }
 
     #responsiveness-card-pa {
@@ -246,7 +267,7 @@ html {
     }
 
     #responsiveness-card-ma-student {
-        margin-left: 9.5%;
+        margin-left: 8.5%;
     }
 
     #responsiveness-card-pa {
@@ -268,7 +289,7 @@ html {
     }
 
     #responsiveness-card-ma-student {
-        margin-left: 8.5%;
+        margin-left: 7.5%;
     }
 
     #responsiveness-card-pa {
@@ -298,7 +319,7 @@ html {
     }
 
     #responsiveness-card-ma-student {
-        margin-left: 7%;
+        margin-left: 6%;
     }
 
     #responsiveness-card-pa {
@@ -320,7 +341,7 @@ html {
     }
 
     #responsiveness-card-ma-student {
-        margin-left: 5%;
+        margin-left: 4%;
     }
 
     #responsiveness-card-pa {
@@ -334,7 +355,7 @@ html {
 
 @media (max-width: 367px) {
     #responsiveness-card-ma-student {
-        margin-left: 2.5%;
+        margin-left: 1.5%;
     }
 }
 
@@ -348,7 +369,7 @@ html {
     }
 
     #responsiveness-card-ma-student {
-        margin-left: 2%;
+        margin-left: 1%;
     }
 
     #responsiveness-card-pa {
@@ -439,14 +460,5 @@ html {
 
     #responsiveness-card-pa {
         margin-left: -2%;
-    }
-}
-
-/* Responsiveness of the modal */
-
-@media (max-width: 575px) {
-    .modal-dialog {
-        margin-right: 3rem;
-        margin-top: 50px;
     }
 }
