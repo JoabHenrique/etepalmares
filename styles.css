@@ -51,6 +51,16 @@ html {
     #responsiveness-card-ma-historic {
         margin-left: 13%;
     }
+
+    .card-pa-index {
+        width: 50%;
+    }
+
+    .responsiveness-card-991-576 {
+        /* At 767px there is another responsiveness */
+        margin-top: 20px;
+        margin-bottom: 28px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -70,6 +80,11 @@ html {
 
     #responsiveness-card-ma-student {
         margin-left: 19.5%;
+    }
+
+    .responsiveness-card-991-576 {
+        margin-top: 10px;
+        margin-bottom: 14px;
     }
 }
 
