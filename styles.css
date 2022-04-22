@@ -1,3 +1,7 @@
+/* There are many good practice issues in CSS code,
+such as inconsistency in the proper use of ids and classes.
+Refactoring needs to be done soon. */
+
 html {
     scroll-behavior: smooth;
 }
@@ -46,6 +50,8 @@ html {
     }
 }
 
+/* 1199 diminuir fonte do exemplo acmi */
+
 @media (max-width: 991px) and (min-width: 576px) {
     #responsiveness-card-ma-student {
         margin-left: 27.5%;
@@ -56,7 +62,7 @@ html {
     }
 
     #responsiveness-card-ma-historic {
-        margin-left: 13%;
+        margin-left: 14%;
     }
 
     .card-pa-index {
@@ -74,6 +80,15 @@ html {
     .col-sm-2 {
         width: 140px;
     }
+
+    .acmi-card-responsiveness {
+        width: 100%;
+        margin-left: 21%;
+    }
+
+    .responsiveness-card-pa-acmi-info {
+        margin-left: 13%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -86,12 +101,16 @@ html {
     }
 
     #responsiveness-card-ma-student {
-        margin-left: 19.5%;
+        margin-left: 20.5%;
     }
 
     .responsiveness-card-site {
         margin-top: 10px;
         margin-bottom: 14px;
+    }
+
+    .acmi-card-responsiveness {
+        margin-left: 8.5%;
     }
 }
 
@@ -129,6 +148,10 @@ html {
         margin-right: 3rem;
         margin-top: 50px;
     }
+
+    .acmi-card-responsiveness {
+        margin-left: 19.5%;
+    }
 }
 
 @media (max-width: 540px) {
@@ -147,6 +170,10 @@ html {
     .dropdown-pa {
         width: 95%;
     }
+
+    .acmi-card-responsiveness {
+        margin-left: 17.5%;
+    }
 }
 
 @media (max-width: 505px) {
@@ -160,6 +187,10 @@ html {
 
     #responsiveness-card-pa {
         margin-left: 17%;
+    }
+
+    .acmi-card-responsiveness {
+        margin-left: 15%;
     }
 }
 
@@ -178,6 +209,10 @@ html {
 
     .dropdown-pa {
         width: 94.8%;
+    }
+
+    .acmi-card-responsiveness {
+        margin-left: 13.8%;
     }
 }
 
@@ -215,6 +250,10 @@ html {
     .search-communication {
         margin-top: -10px;
     }
+
+    .acmi-card-responsiveness {
+        margin-left: 12.5%;
+    }
 }
 
 @media (max-width: 470px) {
@@ -243,11 +282,19 @@ html {
     #responsiveness-card-pa {
         margin-left: 14%;
     }
+
+    .acmi-card-responsiveness {
+        margin-left: 11.5%;
+    }
 }
 
 @media (max-width: 451px) {
     .dropdown-pa {
         width: 94.2%;
+    }
+
+    .acmi-card-responsiveness {
+        margin-left: 11%;
     }
 }
 
@@ -262,6 +309,10 @@ html {
 
     #responsiveness-card-pa {
         margin-left: 12%;
+    }
+
+    .acmi-card-responsiveness {
+        margin-left: 10.5%;
     }
 }
 
@@ -285,6 +336,10 @@ html {
     .dropdown-pa {
         width: 93.8%;
     }
+
+    .acmi-card-responsiveness {
+        margin-left: 9.5%;
+    }
 }
 
 @media (max-width: 415px) {
@@ -298,6 +353,10 @@ html {
 
     #responsiveness-card-pa {
         margin-left: 10.3%;
+    }
+
+    .acmi-card-responsiveness {
+        margin-left: 8%;
     }
 }
 
@@ -325,6 +384,10 @@ html {
     .dropdown-pa {
         width: 93.2%;
     }
+
+    .acmi-card-responsiveness {
+        margin-left: 6.5%;
+    }
 }
 
 @media (max-width: 390px) {
@@ -351,6 +414,10 @@ html {
     #responsiveness-card-pa {
         margin-left: 7.5%;
     }
+
+    .acmi-card-responsiveness {
+        margin-left: 5%;
+    }
 }
 
 @media (max-width: 375px) {
@@ -376,6 +443,10 @@ html {
 
     .dropdown-pa {
         width: 92.8%;
+    }
+
+    .acmi-card-responsiveness {
+        margin-left: 3%;
     }
 }
 
@@ -405,10 +476,18 @@ html {
     .dropdown-pa {
         width: 92.4%;
     }
+
+    .acmi-card-responsiveness {
+        margin-left: 1%;
+    }
 }
 
 @media (max-width: 350px) {
     #responsiveness-card-ma-student {
+        margin-left: 0%;
+    }
+
+    .acmi-card-responsiveness {
         margin-left: 0%;
     }
 }
