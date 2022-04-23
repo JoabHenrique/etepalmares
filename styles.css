@@ -78,6 +78,10 @@ html {
         margin-top: 20px;
         margin-bottom: 28px;
     }
+
+    .btn-make-important {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -88,6 +92,7 @@ html {
     .acmi-card-responsiveness {
         width: 100%;
         margin-left: 21%;
+        margin-bottom: -25px;
     }
 
     .responsiveness-card-pa-acmi-info {
@@ -128,7 +133,6 @@ html {
     }
 
     .btn-communication {
-        margin-bottom: 10px;
         font-size: 100%;
     }
 
