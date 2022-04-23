@@ -50,7 +50,11 @@ html {
     }
 }
 
-/* 1199 diminuir fonte do exemplo acmi */
+@media (max-width: 1199px) and (min-width: 992px) {
+    .name-issuer-card-pa-acmi {
+        font-size: 16px;
+    }
+}
 
 @media (max-width: 991px) and (min-width: 576px) {
     #responsiveness-card-ma-student {
@@ -172,7 +176,7 @@ html {
     }
 
     .acmi-card-responsiveness {
-        margin-left: 17.5%;
+        margin-left: 17%;
     }
 }
 
@@ -312,7 +316,7 @@ html {
     }
 
     .acmi-card-responsiveness {
-        margin-left: 10.5%;
+        margin-left: 10%;
     }
 }
 
@@ -338,7 +342,7 @@ html {
     }
 
     .acmi-card-responsiveness {
-        margin-left: 9.5%;
+        margin-left: 9%;
     }
 }
 
@@ -356,7 +360,7 @@ html {
     }
 
     .acmi-card-responsiveness {
-        margin-left: 8%;
+        margin-left: 7.5%;
     }
 }
 
@@ -416,7 +420,7 @@ html {
     }
 
     .acmi-card-responsiveness {
-        margin-left: 5%;
+        margin-left: 4.5%;
     }
 }
 
@@ -446,13 +450,17 @@ html {
     }
 
     .acmi-card-responsiveness {
-        margin-left: 3%;
+        margin-left: 2.8%;
     }
 }
 
 @media (max-width: 367px) {
     #responsiveness-card-ma-student {
         margin-left: 1.5%;
+    }
+
+    .acmi-card-responsiveness {
+        margin-left: 1.8%;
     }
 }
 
