@@ -109,6 +109,10 @@ html {
         font-size: 13px;
     }
 
+    .btn-register-student {
+        font-size: 13px;
+    }
+
     #responsiveness-card-ma-student {
         margin-left: 20.5%;
     }
@@ -134,6 +138,10 @@ html {
 
     .btn-communication {
         font-size: 100%;
+    }
+
+    .btn-register-student {
+        font-size: 16px;
     }
 
     #responsiveness-card {
