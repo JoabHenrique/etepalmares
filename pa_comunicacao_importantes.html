@@ -58,10 +58,14 @@
                             </button>
                             <ul class="dropdown-pa dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <li><a href="pa_estudantes.html" class="dropdown-item btn btn-light">Detalhes</a></li>
-                                <li><a href="pa_estudantes_cadastrados.html" class="dropdown-item btn btn-light">Cadastrados</a></li>
-                                <li><a href="pa_estudantes_ativos.html" class="dropdown-item btn btn-light">Ativos</a></li>
-                                <li><a href="pa_estudantes_inativos.html" class="dropdown-item btn btn-light">Inativos</a></li>
-                                <li><a href="pa_estudantes_punidos.html" class="dropdown-item btn btn-light">Punidos</a></li>
+                                <li><a href="pa_estudantes_cadastrados.html"
+                                        class="dropdown-item btn btn-light">Cadastrados</a></li>
+                                <li><a href="pa_estudantes_ativos.html" class="dropdown-item btn btn-light">Ativos</a>
+                                </li>
+                                <li><a href="pa_estudantes_inativos.html"
+                                        class="dropdown-item btn btn-light">Inativos</a></li>
+                                <li><a href="pa_estudantes_punidos.html" class="dropdown-item btn btn-light">Punidos</a>
+                                </li>
                             </ul>
                         </div>
 
@@ -78,8 +82,8 @@
                         </div>
 
                         <div>
-                            <button class="btn-communication btn btn-primary mt-2 mb-2" style="width: 100%;" type="button"
-                                id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn-communication btn btn-primary mt-2 mb-2" style="width: 100%;"
+                                type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                                 Comunicação
                             </button>
                             <ul class="dropdown-pa dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -88,8 +92,10 @@
                                 </li>
                                 <li><a href="pa_comunicacao_comunicados.html"
                                         class="dropdown-item btn btn-light">Comunicados</a></li>
-                                <li><a href="pa_comunicacao_mensagens.html" class="dropdown-item btn btn-light">Mensagens</a></li>
-                                <li><a class="dropdown-item btn btn-light" style="background-color: #0d6efd; color: white;">Importantes</a></li>
+                                <li><a href="pa_comunicacao_mensagens.html"
+                                        class="dropdown-item btn btn-light">Mensagens</a></li>
+                                <li><a class="dropdown-item btn btn-light"
+                                        style="background-color: #0d6efd; color: white;">Importantes</a></li>
                             </ul>
                         </div>
                     </div>
@@ -142,7 +148,8 @@
                                         data-bs-toggle="modal" data-bs-target="#noticeModal"
                                         style="border: 1px solid silver;">
                                         <div class="d-flex w-100 justify-content-between">
-                                            <h5 class="mb-1" style="text-align: left;">COMUNICADO: Assunto Demonstrativo</h5>
+                                            <h5 class="mb-1" style="text-align: left;">COMUNICADO: Assunto Demonstrativo
+                                            </h5>
                                             <small style="text-align: right;">DD/MM/YYYY</small>
                                         </div>
                                         <div style="text-align: left;">
@@ -166,7 +173,8 @@
                                         data-bs-toggle="modal" data-bs-target="#noticeModal"
                                         style="border: 1px solid silver;">
                                         <div class="d-flex w-100 justify-content-between">
-                                            <h5 class="mb-1" style="text-align: left;">MENSAGEM: Assunto Demonstrativo</h5>
+                                            <h5 class="mb-1" style="text-align: left;">MENSAGEM: Assunto Demonstrativo
+                                            </h5>
                                             <small style="text-align: right;">DD/MM/YYYY</small>
                                         </div>
                                         <div style="text-align: left;">
@@ -208,6 +216,28 @@
                                         </div>
                                     </button>
                                 </div>
+
+                                <div class="mt-2">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item mr-2">
+                                                <a class="btn btn-outline-primary" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item mr-2"><a class="btn btn-primary" href="#">1</a></li>
+                                            <li class="page-item mr-2"><a class="btn btn-outline-primary" href="#">2</a>
+                                            </li>
+                                            <li class="page-item mr-2"><a class="btn btn-outline-primary" href="#">3</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="btn btn-outline-primary" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -232,6 +262,43 @@
                                 id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                                 <strong style="color: white;">REMOVER IMPORTÂNCIA</strong>
                             </button>
+
+                            <p>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseEditProfile"
+                                    role="button" aria-expanded="false" aria-controls="collapseEditProfile"
+                                    style="width: 100%; margin-bottom: -8px;">
+                                    <strong style="color: white;">EDITAR</strong>
+                                </a>
+                            </p>
+                            <div class="collapse mb-2" id="collapseEditProfile">
+                                <div class="card card-body">
+                                    <div style="text-align: center; margin-top: -5px; margin-bottom: -10px;">
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1"
+                                                class="form-label"><strong>Assunto</strong></label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                value="Assunto Demonstrativo" aria-describedby="emailHelp">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1"
+                                                class="form-label"><strong>Mensagem</strong></label>
+                                            <textarea type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                style="height: 150px;">Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo.</textarea>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="modal-footer mt-2" style="margin: 0 auto; margin-bottom: -15px;">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">CANCELAR</button>
+                                        <button type="button" class="btn btn-primary"><strong
+                                                style="color: white;">CONFIRMAR</strong></button>
+                                    </div>
+                                </div>
+                            </div>
 
                             <p>
                                 <a class="btn btn-danger" data-bs-toggle="collapse" href="#collapseExample"
@@ -295,28 +362,29 @@
             </div>
         </div>
 
-    <footer id="credits">
-        <div class="card text-center">
-            <div class="card-header bg-primary" style="color: white;">
-                <p style="margin: 0 auto;">Créditos ao desenvolvedor</p>
+        <footer id="credits">
+            <div class="card text-center">
+                <div class="card-header bg-primary" style="color: white;">
+                    <p style="margin: 0 auto;">Créditos ao desenvolvedor</p>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">JOAB HENRIQUE MARQUES DA SILVA</h5>
+                    <p class="card-text">Aluno do 2º ano do Ensino Médio Integrado ao Curso Técnico em
+                        Desenvolvimento
+                        de Sistemas.</p>
+                    <a href="https://joabhenrique.github.io/portfolio/" target="blank"
+                        class="btn btn-primary">PORTFÓLIO</a>
+                </div>
+                <div class="card-footer text-muted bg-primary">
+                    <a href="index.html" style="color: white; margin: 0 auto;">www.etepalmares.com.br</a>
+                </div>
             </div>
-            <div class="card-body">
-                <h5 class="card-title">JOAB HENRIQUE MARQUES DA SILVA</h5>
-                <p class="card-text">Aluno do 2º ano do Ensino Médio Integrado ao Curso Técnico em
-                    Desenvolvimento
-                    de Sistemas.</p>
-                <a href="https://joabhenrique.github.io/portfolio/" target="blank" class="btn btn-primary">PORTFÓLIO</a>
-            </div>
-            <div class="card-footer text-muted bg-primary">
-                <a href="index.html" style="color: white; margin: 0 auto;">www.etepalmares.com.br</a>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <script src="scripts.js"></script>
 </body>
 
 </html>
