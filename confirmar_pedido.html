@@ -40,7 +40,34 @@
                             <a href="contato_biblioteca.html" class="btn btn-light mt-2" style="width: 150px;">CONTATO</a>
                         </li>
                         <li class="nav-item">
-                            <a href="login.html" class="btn btn-light mt-2" style="width: 150px;">MINHA CONTA</a>
+                            <p>
+                                <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                                  aria-expanded="false" aria-controls="collapseExample" style="width: 150px;">
+                                  MINHA CONTA
+                                </button>
+                              </p>
+                              <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                  <div style="text-align: center; margin-top: -5px; margin-bottom: -10px;">
+                
+                                    <div class="mb-3">
+                                      <label for="exampleInputEmail1" class="form-label"><strong>Matrícula</strong></label>
+                                      <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleInputPassword1" class="form-label"><strong>Código de segurança</strong></label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                
+                                  </div>
+                
+                                  <div class="modal-footer mt-2" style="margin: 0 auto; margin-bottom: -15px;">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCELAR</button>
+                                    <a class="btn btn-primary" href="minha_conta.html"><strong
+                                        style="color: white;">ACESSAR</strong></a>
+                                  </div>
+                                </div>
+                              </div>
                         </li>
                 </div>
             </div>
