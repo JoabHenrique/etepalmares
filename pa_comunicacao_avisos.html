@@ -260,6 +260,28 @@
                                         </div>
                                     </button>
                                 </div>
+
+                                <div class="mt-2">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item mr-2">
+                                                <a class="btn btn-outline-primary" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item mr-2"><a class="btn btn-primary" href="#">1</a></li>
+                                            <li class="page-item mr-2"><a class="btn btn-outline-primary" href="#">2</a>
+                                            </li>
+                                            <li class="page-item mr-2"><a class="btn btn-outline-primary" href="#">3</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="btn btn-outline-primary" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -286,6 +308,43 @@
                             </button>
 
                             <p>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseEditProfile"
+                                    role="button" aria-expanded="false" aria-controls="collapseEditProfile"
+                                    style="width: 100%; margin-bottom: -8px;">
+                                    <strong style="color: white;">EDITAR</strong>
+                                </a>
+                            </p>
+                            <div class="collapse mb-2" id="collapseEditProfile">
+                                <div class="card card-body">
+                                    <div style="text-align: center; margin-top: -5px; margin-bottom: -10px;">
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1"
+                                                class="form-label"><strong>Assunto</strong></label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                value="Assunto Demonstrativo" aria-describedby="emailHelp">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1"
+                                                class="form-label"><strong>Mensagem</strong></label>
+                                            <textarea type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                style="height: 150px;">Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo.</textarea>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="modal-footer mt-2" style="margin: 0 auto; margin-bottom: -15px;">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">CANCELAR</button>
+                                        <button type="button" class="btn btn-primary"><strong
+                                                style="color: white;">CONFIRMAR</strong></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>
                                 <a class="btn btn-danger" data-bs-toggle="collapse" href="#collapseExample"
                                     role="button" aria-expanded="false" aria-controls="collapseExample"
                                     style="width: 100%;">
@@ -299,7 +358,7 @@
                                                 desfeita.</strong></p>
                                     </div>
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><strong
-                                        style="color: white;">CONFIRMAR</strong></button>
+                                            style="color: white;">CONFIRMAR</strong></button>
                                 </div>
                             </div>
 
