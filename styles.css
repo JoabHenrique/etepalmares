@@ -43,13 +43,11 @@ html {
 
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none;
-    
 }
 
 input[type=number] { 
    -moz-appearance: textfield;
    appearance: textfield;
-
 }
 
 /* Responsiveness */
@@ -92,6 +90,10 @@ input[type=number] {
 
     .btn-make-important {
         font-size: 12px;
+    }
+
+    .responsiveness-pa-reg-students {
+        width: 76%;
     }
 }
 
@@ -325,6 +327,12 @@ input[type=number] {
     }
 }
 
+@media (max-width: 441px) {
+    .btn-modal-edit {
+        width: 100%;
+    }
+}
+
 @media (max-width: 440px) {
     #responsiveness-card {
         margin-left: 13%;
@@ -445,6 +453,7 @@ input[type=number] {
     .acmi-card-responsiveness {
         margin-left: 4.5%;
     }
+
 }
 
 @media (max-width: 375px) {
