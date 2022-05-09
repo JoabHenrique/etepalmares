@@ -58,10 +58,14 @@
                             </button>
                             <ul class="dropdown-pa dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <li><a href="pa_estudantes.html" class="dropdown-item btn btn-light">Detalhes</a></li>
-                                <li><a href="pa_estudantes_cadastrados.html" class="dropdown-item btn btn-light">Cadastrados</a></li>
-                                <li><a href="pa_estudantes_ativos.html" class="dropdown-item btn btn-light">Ativos</a></li>
-                                <li><a href="pa_estudantes_inativos.html" class="dropdown-item btn btn-light">Inativos</a></li>
-                                <li><a href="pa_estudantes_punidos.html" class="dropdown-item btn btn-light">Punidos</a></li>
+                                <li><a href="pa_estudantes_cadastrados.html"
+                                        class="dropdown-item btn btn-light">Cadastrados</a></li>
+                                <li><a href="pa_estudantes_ativos.html" class="dropdown-item btn btn-light">Ativos</a>
+                                </li>
+                                <li><a href="pa_estudantes_inativos.html"
+                                        class="dropdown-item btn btn-light">Inativos</a></li>
+                                <li><a href="pa_estudantes_punidos.html" class="dropdown-item btn btn-light">Punidos</a>
+                                </li>
                             </ul>
                         </div>
 
@@ -78,8 +82,8 @@
                         </div>
 
                         <div>
-                            <button class="btn-communication btn btn-primary mt-2 mb-2" style="width: 100%;" type="button"
-                                id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn-communication btn btn-primary mt-2 mb-2" style="width: 100%;"
+                                type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                                 Comunicação
                             </button>
                             <ul class="dropdown-pa dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -120,8 +124,8 @@
                                         data-bs-toggle="modal" data-bs-target="#communiqueModal">
                                         <div class="d-flex w-100 justify-content-between">
                                             <h5 class="mb-1" style="text-align: left;">Assunto Demonstrativo
-                                                (Importante)</h5>
-                                            <small style="text-align: right;">DD/MM/YYYY</small>
+                                                (Importante) <small><span class="badge bg-danger">Não
+                                                        respondido</span></small></h5>
                                         </div>
                                         <div style="text-align: left;">
                                             <p class="mb-1">Este é apenas um exemplo do resumo do conteúdo demonstrativo
@@ -134,18 +138,23 @@
                                                 demonstrativo
                                                 deste comunicado
                                                 demonstrativo.</p>
-                                            <small>de Monitor Demonstrativo</small>
+                                            <div class="div-display-pa-communique w-100 justify-content-between">
+                                                <small style="color: white;">de Estudante Demonstrativo</small>
+                                                <small class="display-message-pa-communique-messages"
+                                                    style="color: white;">DD/MM/YYYY</small>
+                                            </div>
                                         </div>
                                     </button>
                                 </div>
 
                                 <div>
-                                    <button type="button" class="btn btn-light mb-2 mb-2 pt-2 pl-3 pb-2 pr-3"
+                                    <button type="button" class="btn btn-light mb-2 pt-2 pl-3 pb-2 pr-3"
                                         data-bs-toggle="modal" data-bs-target="#communiqueModal"
                                         style="border: 1px solid silver;">
                                         <div class="d-flex w-100 justify-content-between">
-                                            <h5 class="mb-1" style="text-align: left;">Assunto Demonstrativo</h5>
-                                            <small style="color: gray; text-align: right;">DD/MM/YYYY</small>
+                                            <h5 class="mb-1" style="text-align: left;">Assunto Demonstrativo
+                                                <small><span class="badge bg-success">Respondido</span></small>
+                                            </h5>
                                         </div>
                                         <div style="text-align: left;">
                                             <p class="mb-1">Este é apenas um exemplo do resumo do conteúdo demonstrativo
@@ -158,18 +167,23 @@
                                                 demonstrativo
                                                 deste comunicado
                                                 demonstrativo.</p>
-                                            <small style="color: gray;">de Monitor Demonstrativo</small>
+                                            <div class="div-display-pa-communique w-100 justify-content-between">
+                                                <small style="color: gray;">de Estudante Demonstrativo</small>
+                                                <small class="display-message-pa-communique-messages"
+                                                    style="color: gray;">DD/MM/YYYY</small>
+                                            </div>
                                         </div>
                                     </button>
                                 </div>
 
                                 <div>
-                                    <button type="button" class="btn btn-light mb-2 mb-2 pt-2 pl-3 pb-2 pr-3"
+                                    <button type="button" class="btn btn-light mb-2 pt-2 pl-3 pb-2 pr-3"
                                         data-bs-toggle="modal" data-bs-target="#communiqueModal"
                                         style="border: 1px solid silver;">
                                         <div class="d-flex w-100 justify-content-between">
-                                            <h5 class="mb-1" style="text-align: left;">Assunto Demonstrativo</h5>
-                                            <small style="color: gray; text-align: right;">DD/MM/YYYY</small>
+                                            <h5 class="mb-1" style="text-align: left;">Assunto Demonstrativo
+                                                <small><span class="badge bg-danger">Não respondido</span></small>
+                                            </h5>
                                         </div>
                                         <div style="text-align: left;">
                                             <p class="mb-1">Este é apenas um exemplo do resumo do conteúdo demonstrativo
@@ -182,18 +196,23 @@
                                                 demonstrativo
                                                 deste comunicado
                                                 demonstrativo.</p>
-                                            <small style="color: gray;">de Monitor Demonstrativo</small>
+                                            <div class="div-display-pa-communique w-100 justify-content-between">
+                                                <small style="color: gray;">de Estudante Demonstrativo</small>
+                                                <small class="display-message-pa-communique-messages"
+                                                    style="color: gray;">DD/MM/YYYY</small>
+                                            </div>
                                         </div>
                                     </button>
                                 </div>
 
                                 <div>
-                                    <button type="button" class="btn btn-light mb-2 mb-2 pt-2 pl-3 pb-2 pr-3"
+                                    <button type="button" class="btn btn-light mb-2 pt-2 pl-3 pb-2 pr-3"
                                         data-bs-toggle="modal" data-bs-target="#communiqueModal"
                                         style="border: 1px solid silver;">
                                         <div class="d-flex w-100 justify-content-between">
-                                            <h5 class="mb-1" style="text-align: left;">Assunto Demonstrativo</h5>
-                                            <small style="color: gray; text-align: right;">DD/MM/YYYY</small>
+                                            <h5 class="mb-1" style="text-align: left;">Assunto Demonstrativo
+                                                <small><span class="badge bg-success">Respondido</span></small>
+                                            </h5>
                                         </div>
                                         <div style="text-align: left;">
                                             <p class="mb-1">Este é apenas um exemplo do resumo do conteúdo demonstrativo
@@ -206,7 +225,11 @@
                                                 demonstrativo
                                                 deste comunicado
                                                 demonstrativo.</p>
-                                            <small style="color: gray;">de Monitor Demonstrativo</small>
+                                            <div class="div-display-pa-communique w-100 justify-content-between">
+                                                <small style="color: gray;">de Estudante Demonstrativo</small>
+                                                <small class="display-message-pa-communique-messages"
+                                                    style="color: gray;">DD/MM/YYYY</small>
+                                            </div>
                                         </div>
                                     </button>
                                 </div>
@@ -265,14 +288,14 @@
                                     <strong style="color: white;">APAGAR</strong>
                                 </a>
                             </p>
-                            <div class="collapse mb-2" id="collapseExample">
+                            <div class="collapse mb-2" id="collapseExample" style="margin-top: -10px;">
                                 <div class="card card-body">
-                                    <div style="text-align: center; margin-top: -5px; margin-bottom: -10px;">
+                                    <div style="text-align: center; margin-top: -5px; margin-bottom: -8px;">
                                         <p>Tem certeza que deseja apagar a mensagem?<br><strong>A ação não pode ser
                                                 desfeita.</strong></p>
                                     </div>
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><strong
-                                        style="color: white;">CONFIRMAR</strong></button>
+                                            style="color: white;">CONFIRMAR</strong></button>
                                 </div>
                             </div>
 
@@ -296,7 +319,107 @@
 
                         </div>
 
-                        <div class="mb-3 ml-4 mr-3">
+                        <div class="ml-4 mr-3">
+                            <ul class="list-group">
+                                <li class="list-group-item active" aria-current="true" style="width: 100%;">
+                                    <strong style="color: white;">Assunto Demonstrativo</strong>
+                                </li>
+                                <li class="list-group-item">Conteúdo do comunicado demonstrativo. Conteúdo do comunicado
+                                    demonstrativo. Conteúdo do comunicado demonstrativo. Conteúdo do comunicado
+                                    demonstrativo. Conteúdo do comunicado demonstrativo. Conteúdo do comunicado
+                                    demonstrativo. Conteúdo do comunicado demonstrativo. Conteúdo do comunicado
+                                    demonstrativo. Conteúdo do comunicado demonstrativo. Conteúdo do comunicado
+                                    demonstrativo. Conteúdo do comunicado demonstrativo. Conteúdo do comunicado
+                                    demonstrativo. Conteúdo do comunicado demonstrativo.</li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body">
+                            <button class="btn-make-important btn btn-primary" style="width: 100%; margin-bottom: 1px;"
+                                type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong style="color: white;">RESPONDER</strong>
+                            </button>
+                        </div>
+
+                        <hr style="margin-top: -5px;">
+
+                        <div class="card-body" style="margin-top: -15px;">
+                            <p>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseEditProfile"
+                                    role="button" aria-expanded="false" aria-controls="collapseEditProfile"
+                                    style="width: 100%; margin-bottom: -8px;">
+                                    <strong style="color: white;">EDITAR</strong>
+                                </a>
+                            </p>
+                            <div class="collapse mb-2" id="collapseEditProfile">
+                                <div class="card card-body">
+                                    <div style="text-align: center; margin-top: -5px; margin-bottom: -10px;">
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1"
+                                                class="form-label"><strong>Assunto</strong></label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                value="Assunto Demonstrativo" aria-describedby="emailHelp">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1"
+                                                class="form-label"><strong>Mensagem</strong></label>
+                                            <textarea type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                style="height: 150px;">Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo. Conteúdo do aviso demonstrativo.</textarea>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="modal-footer mt-2" style="margin: 0 auto; margin-bottom: -15px;">
+                                        <button type="button" class="btn-modal-edit btn btn-secondary"
+                                            data-bs-dismiss="modal">CANCELAR</button>
+                                        <button type="button" class="btn-modal-edit btn btn-primary"><strong
+                                                style="color: white;">CONFIRMAR</strong></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>
+                                <a class="btn btn-danger" data-bs-toggle="collapse" href="#collapseDeleteAnswer"
+                                    role="button" aria-expanded="false" aria-controls="collapseDeleteAnswer"
+                                    style="width: 100%;">
+                                    <strong style="color: white;">APAGAR</strong>
+                                </a>
+                            </p>
+                            <div class="collapse mb-2" id="collapseDeleteAnswer" style="margin-top: -8px;">
+                                <div class="card card-body">
+                                    <div style="text-align: center; margin-top: -5px; margin-bottom: -10px;">
+                                        <p>Tem certeza que deseja apagar a resposta?<br><strong>A ação não pode ser
+                                                desfeita.</strong></p>
+                                    </div>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><strong
+                                            style="color: white;">CONFIRMAR</strong></button>
+                                </div>
+                            </div>
+
+                            <ul class="list-group">
+                                <li class="list-group-item active" aria-current="true" style="width: 100%;">
+                                    <strong style="color: white;">Respondido por:</strong>
+                                </li>
+                                <div class="card mb-1" style="width: 100%;">
+                                    <img src="images/student-icon.png" style="width: 150px; margin: 0 auto;"
+                                        class="card-img-top pt-2" alt="student-icon">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nome Demonstrativo</h5>
+                                        <p class="card-text">Matrícula: <strong>XXXXXXX</strong><br>Turma:
+                                            <strong>X XXX
+                                                X</strong><br>Telefone: <br><strong>+XX (XX)
+                                                XXXXXXXXX</strong><br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </ul>
+
+                        </div>
+
+                        <div class="ml-4 mr-3">
                             <ul class="list-group">
                                 <li class="list-group-item active" aria-current="true" style="width: 100%;">
                                     <strong style="color: white;">Assunto Demonstrativo</strong>
