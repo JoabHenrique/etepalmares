@@ -178,9 +178,11 @@
                                                     </div>
                                                 </div>
                                                 <div class="modal-footer" style="margin: 0 auto;">
-                                                    <button type="button" class="btn btn-secondary"
+                                                    <button type="button"
+                                                        class="btn-cancel-and-register btn btn-secondary"
                                                         data-bs-dismiss="modal">CANCELAR</button>
-                                                    <a class="btn btn-primary" href="pa_comunicacao_avisos.html"><strong
+                                                    <a class="btn-cancel-and-register btn btn-primary"
+                                                        href="pa_comunicacao_avisos.html"><strong
                                                             style="color: white;">CADASTRAR</strong></a>
                                                 </div>
                                             </div>
@@ -334,9 +336,11 @@
 
                                                 </div>
                                                 <div class="modal-footer" style="margin: 0 auto;">
-                                                    <button type="button" class="btn btn-secondary"
+                                                    <button type="button"
+                                                        class="btn-cancel-and-register btn btn-secondary"
                                                         data-bs-dismiss="modal">CANCELAR</button>
-                                                    <a class="btn btn-primary" href="pa_comunicacao_avisos.html"><strong
+                                                    <a class="btn-cancel-and-register btn btn-primary"
+                                                        href="pa_comunicacao_avisos.html"><strong
                                                             style="color: white;">CONFIRMAR</strong></a>
                                                 </div>
                                             </div>
@@ -666,8 +670,7 @@
                                                 aria-label="Basic radio toggle button group">
 
                                                 <select class="option-class form-select bg-outline-primary"
-                                                    aria-label="Default select example"
-                                                    style="font-size: 18px;">
+                                                    aria-label="Default select example" style="font-size: 18px;">
                                                     <option value="0">Selecione a turma</option>
                                                     <option value="1">1º ADM A</option>
                                                     <option value="1">1º ADM B</option>
@@ -713,15 +716,34 @@
                             <p>
                                 <a class="btn btn-danger" data-bs-toggle="collapse" href="#collapseExample"
                                     role="button" aria-expanded="false" aria-controls="collapseExample"
-                                    style="width: 100%;">
-                                    <strong style="color: white;">REMOVER</strong>
+                                    style="width: 100%; margin-bottom: -8px;">
+                                    <strong style="color: white;">EXCLUIR</strong>
                                 </a>
                             </p>
                             <div class="collapse mb-2" id="collapseExample" style="margin-top: -8px;">
                                 <div class="card card-body">
                                     <div style="text-align: center; margin-top: -5px; margin-bottom: -10px;">
-                                        <p>Tem certeza que deseja remover o estudante?<br><strong>A ação não pode ser
+                                        <p>Tem certeza que deseja excluir o estudante?<br><strong>A ação não pode ser
                                                 desfeita.</strong></p>
+                                    </div>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><strong
+                                            style="color: white;">CONFIRMAR</strong></button>
+                                </div>
+                            </div>
+
+                            <p>
+                                <a class="btn btn-danger" data-bs-toggle="collapse" href="#collapsePunishment"
+                                    role="button" aria-expanded="false" aria-controls="collapsePunishment"
+                                    style="width: 100%;">
+                                    <strong style="color: white;">PUNIR ESTUDANTE</strong>
+                                </a>
+                            </p>
+                            <div class="collapse mb-2" id="collapsePunishment" style="margin-top: -8px;">
+                                <div class="card card-body">
+                                    <div style="text-align: center; margin-top: -5px; margin-bottom: -10px;">
+                                        <p>Tem certeza que deseja punir o estudante?<br><strong>Ao confirmar, o
+                                                estudante não poderá mais solicitar empréstimos na biblioteca até que a
+                                                punição seja removida.</strong></p>
                                     </div>
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><strong
                                             style="color: white;">CONFIRMAR</strong></button>
