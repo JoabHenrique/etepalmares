@@ -26,6 +26,10 @@ html {
     display: flex;
 }
 
+.center-list {
+    padding-top: 18px;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -189,6 +193,10 @@ input[type=number] {
     .acmi-card-responsiveness {
         margin-left: 19.5%;
     }
+
+    .center-list {
+        padding-top: 7px;
+    }
 }
 
 @media (max-width: 540px) {
@@ -339,7 +347,7 @@ input[type=number] {
     }
 }
 
-@media (max-width: 441px) {
+@media (max-width: 442px) {
     .btn-modal-edit {
         width: 100%;
     }
@@ -495,6 +503,10 @@ input[type=number] {
 
     #responsiveness-card-ma-student {
         margin-left: 4%;
+    }
+
+    .btn-cancel-and-register {
+        width: 100%;
     }
 
     #responsiveness-card-pa {
