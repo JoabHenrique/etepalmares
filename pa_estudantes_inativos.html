@@ -80,7 +80,7 @@
                         </div>
 
                         <div>
-                            <button class="btn-communication btn btn-outline-primary mt-2" style="width: 100%;"
+                            <button class="btn-communication btn btn-outline-primary mt-2 mb-3" style="width: 100%;"
                                 type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                                 Comunicação
                             </button>
@@ -464,15 +464,34 @@
                             <p>
                                 <a class="btn btn-danger" data-bs-toggle="collapse" href="#collapseExample"
                                     role="button" aria-expanded="false" aria-controls="collapseExample"
-                                    style="width: 100%;">
+                                    style="width: 100%; margin-bottom: -8px;">
                                     <strong style="color: white;">EXCLUIR</strong>
                                 </a>
                             </p>
-                            <div class="collapse mb-2" id="collapseExample" style="margin-top: -8px;">
+                            <div class="collapse mb-2" id="collapseExample">
                                 <div class="card card-body">
                                     <div style="text-align: center; margin-top: -5px; margin-bottom: -10px;">
                                         <p>Tem certeza que deseja excluir o estudante?<br><strong>A ação não pode ser
                                                 desfeita.</strong></p>
+                                    </div>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><strong
+                                            style="color: white;">CONFIRMAR</strong></button>
+                                </div>
+                            </div>
+
+                            <p>
+                                <a class="btn btn-danger" data-bs-toggle="collapse" href="#collapsePunishment"
+                                    role="button" aria-expanded="false" aria-controls="collapsePunishment"
+                                    style="width: 100%;">
+                                    <strong style="color: white;">PUNIR ESTUDANTE</strong>
+                                </a>
+                            </p>
+                            <div class="collapse mb-2" id="collapsePunishment" style="margin-top: -8px;">
+                                <div class="card card-body">
+                                    <div style="text-align: center; margin-top: -5px; margin-bottom: -10px;">
+                                        <p>Tem certeza que deseja punir o estudante?<br><strong>Ao confirmar, o
+                                                estudante não poderá mais solicitar empréstimos na biblioteca até que a
+                                                punição seja removida.</strong></p>
                                     </div>
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><strong
                                             style="color: white;">CONFIRMAR</strong></button>
