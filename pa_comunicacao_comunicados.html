@@ -311,10 +311,22 @@
                     </div>
                     <div class="modal-body">
                         <div class="card-body" style="margin-top: -15px;">
-                            <button class="btn-make-important btn btn-primary mb-2" style="width: 100%;" type="button"
-                                id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                                <strong style="color: white;">TORNAR IMPORTANTE</strong>
-                            </button>
+                            <p>
+                                <a class="btn-make-important btn btn-primary" data-bs-toggle="collapse" href="#collapseMakeImportant"
+                                    role="button" aria-expanded="false" aria-controls="collapseMakeImportant"
+                                    style="width: 100%; margin-bottom: -8px;">
+                                    <strong style="color: white;">TORNAR IMPORTANTE</strong>
+                                </a>
+                            </p>
+                            <div class="collapse mb-2" id="collapseMakeImportant">
+                                <div class="card card-body">
+                                    <div style="text-align: center; margin-top: -5px; margin-bottom: -10px;">
+                                        <p>Tem certeza que deseja tornar o aviso importante?</p>
+                                    </div>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><strong
+                                            style="color: white;">CONFIRMAR</strong></button>
+                                </div>
+                            </div>
 
                             <p>
                                 <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseEditProfile"
@@ -382,7 +394,7 @@
                                         <h5 class="card-title">Nome Demonstrativo</h5>
                                         <p class="card-text">Matrícula: <strong>XXXXXXX</strong><br>Turma:
                                             <strong>X XXX
-                                                X</strong><br>Telefone: <br><strong>+XX (XX)
+                                                X</strong><br>Telefone: <strong>+XX (XX)
                                                 XXXXXXXXX</strong><br>
                                         </p>
                                     </div>
