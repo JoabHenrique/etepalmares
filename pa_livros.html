@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETE Palmares - Livros (PA)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" href="images/logo_ete.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="biblioteca.html">
+                    <img src="images/logo_ete.png" alt="logo_ete" width="100" height="75">
+                </a>
+
+                <a href="biblioteca.html" class="pa-exit-btn btn btn-light">SAIR</a>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <section class="main-panel mt-3 mb-3">
+                <div class="row align-items-start">
+                    <div class="col-sm-2" style="color: darkgray;">
+                        <h1 class="bg-primary rounded-3 pb-2" id="h1-name-library"
+                            style="text-align: center; color: white;">Menu
+                        </h1>
+
+                        <a href="pa_index.html" class="btn btn-outline-primary" style="width: 100%;">Início</a>
+
+                        <div>
+                            <button class="btn btn-primary mt-2" style="width: 100%;" type="button"
+                                id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                Livros
+                            </button>
+                            <ul class="dropdown-pa dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><a class="dropdown-item btn btn-light" style="background-color: #0d6efd; color: white;">Detalhes</a></li>
+                                <li><a href="pa_livros_catalogados.html" class="dropdown-item btn btn-light">Catalogados</a></li>
+                                <li><a href="pa_livros_emprestados.html" class="dropdown-item btn btn-light">Emprestados</a></li>
+                                <li><a href="pa_livros_solicitados.html" class="dropdown-item btn btn-light">Solicitados</a></li>
+                                <li><a href="pa_livros_pendentes.html" class="dropdown-item btn btn-light">Pendentes</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <button class="btn btn-outline-primary mt-2" style="width: 100%;" type="button"
+                                id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                Estudantes
+                            </button>
+                            <ul class="dropdown-pa dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><a href="pa_estudantes.html" class="dropdown-item btn btn-light">Detalhes</a></li>
+                                <li><a href="pa_estudantes_cadastrados.html" class="dropdown-item btn btn-light">Cadastrados</a></li>
+                                <li><a href="pa_estudantes_ativos.html" class="dropdown-item btn btn-light">Ativos</a></li>
+                                <li><a href="pa_estudantes_inativos.html" class="dropdown-item btn btn-light">Inativos</a></li>
+                                <li><a href="pa_estudantes_punidos.html" class="dropdown-item btn btn-light">Punidos</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <button class="btn btn-outline-primary mt-2" style="width: 100%;" type="button"
+                                id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                Site-catálogo
+                            </button>
+                            <ul class="dropdown-pa dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><a href="" class="dropdown-item btn btn-light">Detalhes</a></li>
+                                <li><a href="" class="dropdown-item btn btn-light">...</a></li>
+                                <li><a href="" class="dropdown-item btn btn-light">...</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <button class="btn-communication btn btn-outline-primary mt-2 mb-2" style="width: 100%;"
+                                type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                Comunicação
+                            </button>
+                            <ul class="dropdown-pa dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><a href="pa_comunicacao.html" class="dropdown-item btn btn-light">Detalhes</a></li>
+                                <li><a href="pa_comunicacao_avisos.html" class="dropdown-item btn btn-light">Avisos</a></li>
+                                <li><a href="pa_comunicacao_comunicados.html" class="dropdown-item btn btn-light">Comunicados</a></li>
+                                <li><a href="pa_comunicacao_mensagens.html" class="dropdown-item btn btn-light">Mensagens</a></li>
+                                <li><a href="pa_comunicacao_importantes.html" class="dropdown-item btn btn-light">Importantes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <h1 class="bg-primary rounded-3 pb-2" id="h1-name-library"
+                            style="text-align: center; color: white;">Biblioteca
+                            Ariano Suassuna
+                        </h1>
+
+                        <div class="row g-3" id="responsiveness-card-pa">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="images/cataloged-icon.png" class="card-img-top pt-2"
+                                        style="width: 130px; margin: 0 auto" alt="book-icon">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="text-align: center;">Catalogados</h5>
+                                        <a href="pa_livros_catalogados.html" class="btn-details btn btn-primary"
+                                            style="width: 100%;"><strong style="color: white;">VISUALIZAR</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="images/borrowed-icon.png" class="card-img-top pt-2"
+                                        style="width: 130px; margin: 0 auto;" alt="book-icon">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="text-align: center;">Emprestados</h5>
+                                        <a href="pa_livros_emprestados.html" class="btn-details btn btn-primary"
+                                            style="width: 100%;"><strong style="color: white;">VISUALIZAR</strong></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="images/requested-icon.png" class="card-img-top pt-2"
+                                        style="width: 130px; margin: 0 auto;" alt="book-icon">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="text-align: center;">Solicitados</h5>
+                                        <a href="pa_livros_solicitados.html" class="btn-details btn btn-primary"
+                                            style="width: 100%;"><strong style="color: white;">VISUALIZAR</strong></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="images/outstanding-icon.png" class="card-img-top pt-2"
+                                        style="width: 130px; margin: 0 auto;" alt="book-icon">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="text-align: center;">Pendentes</h5>
+                                        <a href="pa_livros_pendentes.html" class="btn-details btn btn-primary"
+                                            style="width: 100%;"><strong style="color: white;">VISUALIZAR</strong></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+    </section>
+
+    </div>
+
+    <footer id="credits">
+        <div class="card text-center">
+            <div class="card-header bg-primary" style="color: white;">
+                <p style="margin: 0 auto;">Créditos ao desenvolvedor</p>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">JOAB HENRIQUE MARQUES DA SILVA</h5>
+                <p class="card-text">Aluno do 2º ano do Ensino Médio Integrado ao Curso Técnico em
+                    Desenvolvimento
+                    de Sistemas.</p>
+                <a href="https://joabhenrique.github.io/portfolio/" target="blank" class="btn btn-primary">PORTFÓLIO</a>
+            </div>
+            <div class="card-footer text-muted bg-primary">
+                <a href="index.html" style="color: white; margin: 0 auto;">www.etepalmares.com.br</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
