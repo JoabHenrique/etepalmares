@@ -239,6 +239,19 @@ input[type=number] {
     }
 }
 
+@media (min-width: 493px) {
+    .btn-add-category {
+        margin-left: -10px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 492px) {
+    .btn-add-category {
+        margin-top: 5px;
+    }
+}
+
 @media (max-width: 490px) {
     #responsiveness-card {
         margin-left: 17%;
