@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETE Palmares - Emprestados (Livros - PA)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" href="images/logo_ete.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="biblioteca.html">
+                    <img src="images/logo_ete.png" alt="logo_ete" width="100" height="75">
+                </a>
+
+                <a href="biblioteca.html" class="pa-exit-btn btn btn-light">SAIR</a>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <section class="main-panel mt-3 mb-3">
+                <div class="row align-items-start">
+                    <div class="col-sm-2" style="color: darkgray;">
+                        <h1 class="bg-primary rounded-3 pb-2" id="h1-name-library"
+                            style="text-align: center; color: white;">Menu
+                        </h1>
+
+                        <a href="pa_index.html" class="btn btn-outline-primary" style="width: 100%;">Início</a>
+
+                        <div>
+                            <button class="btn btn-primary mt-2" style="width: 100%;" type="button" id="dropdownMenu2"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Livros
+                            </button>
+                            <ul class="dropdown-pa dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><a href="pa_livros.html" class="dropdown-item btn btn-light">Detalhes</a></li>
+                                <li><a href="pa_livros_catalogados.html"
+                                        class="dropdown-item btn btn-light">Catalogados</a></li>
+                                <li><a href="pa_livros_emprestados.html"
+                                        style="background-color: #0d6efd; color: white;"
+                                        class="dropdown-item btn btn-light">Emprestados</a></li>
+                                <li><a href="pa_livros_solicitados.html"
+                                        class="dropdown-item btn btn-light">Solicitados</a></li>
+                                <li><a href="pa_livros_pendentes.html" class="dropdown-item btn btn-light">Pendentes</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <button class="btn btn-outline-primary mt-2" style="width: 100%;" type="button"
+                                id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                Estudantes
+                            </button>
+                            <ul class="dropdown-pa dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><a href="pa_estudantes.html" class="dropdown-item btn btn-light">Detalhes</a></li>
+                                <li><a class="dropdown-item btn btn-light">Cadastrados</a></li>
+                                <li><a href="pa_estudantes_ativos.html" class="dropdown-item btn btn-light">Ativos</a>
+                                </li>
+                                <li><a href="pa_estudantes_inativos.html"
+                                        class="dropdown-item btn btn-light">Inativos</a></li>
+                                <li><a href="pa_estudantes_punidos.html" class="dropdown-item btn btn-light">Punidos</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <button class="btn btn-outline-primary mt-2" style="width: 100%;" type="button"
+                                id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                Site-catálogo
+                            </button>
+                            <ul class="dropdown-pa dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><a href="" class="dropdown-item btn btn-light">Detalhes</a></li>
+                                <li><a href="" class="dropdown-item btn btn-light">...</a></li>
+                                <li><a href="" class="dropdown-item btn btn-light">...</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <button class="btn-communication btn btn-outline-primary mt-2" style="width: 100%;"
+                                type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                Comunicação
+                            </button>
+                            <ul class="dropdown-pa dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><a href="pa_comunicacao.html" class="dropdown-item btn btn-light">Detalhes</a></li>
+                                <li><a href="pa_comunicacao_avisos.html" class="dropdown-item btn btn-light">Avisos</a>
+                                </li>
+                                <li><a href="pa_comunicacao_comunicados.html"
+                                        class="dropdown-item btn btn-light">Comunicados</a></li>
+                                <li><a href="pa_comunicacao_mensagens.html"
+                                        class="dropdown-item btn btn-light">Mensagens</a></li>
+                                <li><a href="pa_comunicacao_importantes.html"
+                                        class="dropdown-item btn btn-light">Importantes</a></li>
+                            </ul>
+                        </div>
+
+                        <hr>
+
+                        <div>
+                            <h3 style="text-align: center;">
+                                <div>
+                                    <button type="button" class="btn-register-student btn btn-primary mb-2"
+                                        style="width: 100%;" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        aria-expanded="false">
+                                        <strong style="color: white;">EMPRESTAR LIVRO</strong>
+                                    </button>
+
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header bg-primary">
+                                                    <h5 class="modal-title" style="color: white;"
+                                                        id="exampleModalLabel">
+                                                        CATALOGAR LIVRO</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1"
+                                                            class="form-label"><strong>Foto</strong></label>
+                                                        <input type="file" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1"
+                                                            class="form-label"><strong>Nome</strong></label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1"
+                                                            class="form-label"><strong>Autor(a)</strong></label>
+                                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1"
+                                                            class="form-label"><strong>Quantidade</strong></label>
+                                                        <input type="number" class="form-control"
+                                                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1"
+                                                            class="form-label"><strong>Categoria(s)</strong></label><br>
+                                                        <h6 style="color: black; margin-top: -5px;"><button
+                                                                href="pa_index.html"
+                                                                class="btn btn-outline-primary">Categoria 1</button>
+                                                            <button href="pa_index.html"
+                                                                class="btn btn-outline-primary">Categoria 2</button>
+                                                        </h6>
+                                                        <div class="btn-group" role="group"
+                                                            aria-label="Basic radio toggle button group">
+
+                                                            <select class="option-class form-select bg-outline-primary"
+                                                                aria-label="Default select example"
+                                                                style="font-size: 18px; width: 270px;">
+                                                                <option value="0" selected>Adicionar categoria</option>
+                                                                <option value="1">Categoria 1</option>
+                                                                <option value="1">Categoria 2</option>
+                                                                <option value="1">Categoria 3</option>
+                                                                <option value="1">Categoria 4</option>
+                                                                <option value="1">Categoria 5</option>
+                                                                <option value="1">Categoria 6</option>
+                                                                <option value="1">Categoria 7</option>
+                                                                <option value="1">Categoria 8</option>
+                                                                <option value="1">Categoria 9</option>
+                                                                <option value="1">Categoria 10</option>
+                                                            </select>
+                                                        </div>
+                                                        <button class="btn-add-category btn btn-primary"
+                                                            href="pa_comunicacao_avisos.html"><strong
+                                                                style="color: white;">ADICIONAR</strong></button>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1"
+                                                            class="form-label"><strong>Tag(s)</strong></label>
+                                                        <input type="text"
+                                                            placeholder="Separe por vírgulas. Ex: amor, casal"
+                                                            class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1"
+                                                            class="form-label"><strong>Descrição</strong></label>
+                                                        <textarea type="text" style="height: 100px;"
+                                                            class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp"></textarea>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1"
+                                                            class="form-label"><strong>Características</strong></label>
+                                                        <input type="text" placeholder="Acabamento" class="form-control"
+                                                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                        <input type="text" placeholder="Data de lançamento da edição"
+                                                            class="mt-2 form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+                                                        <input type="text" placeholder="Editora"
+                                                            class="mt-2 form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+                                                        <input type="number" placeholder="Número de páginas"
+                                                            class="mt-2 form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+                                                        <input type="text" placeholder="País de origem"
+                                                            class="mt-2 form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+                                                        <input type="text" placeholder="Livro técnico? [Sim/Não]"
+                                                            class="mt-2 form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp">
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer" style="margin: 0 auto;">
+                                                    <button type="button"
+                                                        class="btn-cancel-and-register btn btn-secondary"
+                                                        data-bs-dismiss="modal">CANCELAR</button>
+                                                    <a class="btn-cancel-and-register btn btn-primary"
+                                                        href="pa_comunicacao_avisos.html"><strong
+                                                            style="color: white;">CADASTRAR</strong></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="responsiveness-pa-reg-students col">
+                        <h1 class="bg-primary rounded-3 pb-2" id="h1-name-library"
+                            style="text-align: center; color: white;">Biblioteca
+                            Ariano Suassuna
+                        </h1>
+
+                        <div class="row g-1">
+                            <h3 style="text-align: center;">Emprestados</h3>
+
+                            <div class="search-communication" style="margin-left: -1px;">
+                                <form class="d-flex bg-primary rounded-3 pb-2 pt-2"
+                                    style="text-align: center; color: white;">
+                                    <input class="form-control me-1 ml-1" type="search"
+                                        placeholder="Procura alguém específico?" aria-label="Search">
+                                    <a href="busca.html" class="btn btn-light mr-1"><i class="bi bi-search"></i></a>
+                                </form>
+                            </div>
+
+                            <div class="list-group">
+                                <div>
+                                    <button type="button" class="btn mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#registered-studentModal" style="width: 100%; padding: 0;">
+                                        <ul class="list-group list-group-horizontal-sm">
+                                            <li class="list-group-item" style="width: 100%;"><strong>Nome
+                                                    Demonstrativo</strong></li>
+                                            <li class="list-group-item" style="width: 100%;"><strong>Autor
+                                                    Demonstrativo</strong>
+                                            </li>
+                                            <li class="list-group-item" style="width: 100%;">Aluno Demonstrativo</li>
+                                            <li class="list-group-item" style="width: 100%;">DD/MM/YYYY</li>
+                                        </ul>
+                                    </button>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="btn mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#registered-studentModal" style="width: 100%; padding: 0;">
+                                        <ul class="list-group list-group-horizontal-sm">
+                                            <li class="list-group-item" style="width: 100%;"><strong>Nome
+                                                    Demonstrativo</strong></li>
+                                            <li class="list-group-item" style="width: 100%;"><strong>Autor
+                                                    Demonstrativo</strong>
+                                            </li>
+                                            <li class="list-group-item" style="width: 100%;">Aluno Demonstrativo</li>
+                                            <li class="list-group-item" style="width: 100%;">DD/MM/YYYY</li>
+                                        </ul>
+                                    </button>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="btn mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#registered-studentModal" style="width: 100%; padding: 0;">
+                                        <ul class="list-group list-group-horizontal-sm">
+                                            <li class="list-group-item" style="width: 100%;"><strong>Nome
+                                                    Demonstrativo</strong></li>
+                                            <li class="list-group-item" style="width: 100%;"><strong>Autor
+                                                    Demonstrativo</strong>
+                                            </li>
+                                            <li class="list-group-item" style="width: 100%;">Aluno Demonstrativo</li>
+                                            <li class="list-group-item" style="width: 100%;">DD/MM/YYYY</li>
+                                        </ul>
+                                    </button>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="btn mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#registered-studentModal" style="width: 100%; padding: 0;">
+                                        <ul class="list-group list-group-horizontal-sm">
+                                            <li class="list-group-item" style="width: 100%;"><strong>Nome
+                                                    Demonstrativo</strong></li>
+                                            <li class="list-group-item" style="width: 100%;"><strong>Autor
+                                                    Demonstrativo</strong>
+                                            </li>
+                                            <li class="list-group-item" style="width: 100%;">Aluno Demonstrativo</li>
+                                            <li class="list-group-item" style="width: 100%;">DD/MM/YYYY</li>
+                                        </ul>
+                                    </button>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="btn mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#registered-studentModal" style="width: 100%; padding: 0;">
+                                        <ul class="list-group list-group-horizontal-sm">
+                                            <li class="list-group-item" style="width: 100%;"><strong>Nome
+                                                    Demonstrativo</strong></li>
+                                            <li class="list-group-item" style="width: 100%;"><strong>Autor
+                                                    Demonstrativo</strong>
+                                            </li>
+                                            <li class="list-group-item" style="width: 100%;">Aluno Demonstrativo</li>
+                                            <li class="list-group-item" style="width: 100%;">DD/MM/YYYY</li>
+                                        </ul>
+                                    </button>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="btn mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#registered-studentModal" style="width: 100%; padding: 0;">
+                                        <ul class="list-group list-group-horizontal-sm">
+                                            <li class="list-group-item" style="width: 100%;"><strong>Nome
+                                                    Demonstrativo</strong></li>
+                                            <li class="list-group-item" style="width: 100%;"><strong>Autor
+                                                    Demonstrativo</strong>
+                                            </li>
+                                            <li class="list-group-item" style="width: 100%;">Aluno Demonstrativo</li>
+                                            <li class="list-group-item" style="width: 100%;">DD/MM/YYYY</li>
+                                        </ul>
+                                    </button>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="btn mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#registered-studentModal" style="width: 100%; padding: 0;">
+                                        <ul class="list-group list-group-horizontal-sm">
+                                            <li class="list-group-item" style="width: 100%;"><strong>Nome
+                                                    Demonstrativo</strong></li>
+                                            <li class="list-group-item" style="width: 100%;"><strong>Autor
+                                                    Demonstrativo</strong>
+                                            </li>
+                                            <li class="list-group-item" style="width: 100%;">Aluno Demonstrativo</li>
+                                            <li class="list-group-item" style="width: 100%;">DD/MM/YYYY</li>
+                                        </ul>
+                                    </button>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="btn mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#registered-studentModal" style="width: 100%; padding: 0;">
+                                        <ul class="list-group list-group-horizontal-sm">
+                                            <li class="list-group-item" style="width: 100%;"><strong>Nome
+                                                    Demonstrativo</strong></li>
+                                            <li class="list-group-item" style="width: 100%;"><strong>Autor
+                                                    Demonstrativo</strong>
+                                            </li>
+                                            <li class="list-group-item" style="width: 100%;">Aluno Demonstrativo</li>
+                                            <li class="list-group-item" style="width: 100%;">DD/MM/YYYY</li>
+                                        </ul>
+                                    </button>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="btn mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#registered-studentModal" style="width: 100%; padding: 0;">
+                                        <ul class="list-group list-group-horizontal-sm">
+                                            <li class="list-group-item" style="width: 100%;"><strong>Nome
+                                                    Demonstrativo</strong></li>
+                                            <li class="list-group-item" style="width: 100%;"><strong>Autor
+                                                    Demonstrativo</strong>
+                                            </li>
+                                            <li class="list-group-item" style="width: 100%;">Aluno Demonstrativo</li>
+                                            <li class="list-group-item" style="width: 100%;">DD/MM/YYYY</li>
+                                        </ul>
+                                    </button>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="btn mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#registered-studentModal" style="width: 100%; padding: 0;">
+                                        <ul class="list-group list-group-horizontal-sm">
+                                            <li class="list-group-item" style="width: 100%;"><strong>Nome
+                                                    Demonstrativo</strong></li>
+                                            <li class="list-group-item" style="width: 100%;"><strong>Autor
+                                                    Demonstrativo</strong>
+                                            </li>
+                                            <li class="list-group-item" style="width: 100%;">Aluno Demonstrativo</li>
+                                            <li class="list-group-item" style="width: 100%;">DD/MM/YYYY</li>
+                                        </ul>
+                                    </button>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="btn mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#registered-studentModal" style="width: 100%; padding: 0;">
+                                        <ul class="list-group list-group-horizontal-sm">
+                                            <li class="list-group-item" style="width: 100%;"><strong>Nome
+                                                    Demonstrativo</strong></li>
+                                            <li class="list-group-item" style="width: 100%;"><strong>Autor
+                                                    Demonstrativo</strong>
+                                            </li>
+                                            <li class="list-group-item" style="width: 100%;">Aluno Demonstrativo</li>
+                                            <li class="list-group-item" style="width: 100%;">DD/MM/YYYY</li>
+                                        </ul>
+                                    </button>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="btn mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#registered-studentModal" style="width: 100%; padding: 0;">
+                                        <ul class="list-group list-group-horizontal-sm">
+                                            <li class="list-group-item" style="width: 100%;"><strong>Nome
+                                                    Demonstrativo</strong></li>
+                                            <li class="list-group-item" style="width: 100%;"><strong>Autor
+                                                    Demonstrativo</strong>
+                                            </li>
+                                            <li class="list-group-item" style="width: 100%;">Aluno Demonstrativo</li>
+                                            <li class="list-group-item" style="width: 100%;">DD/MM/YYYY</li>
+                                        </ul>
+                                    </button>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="btn mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#registered-studentModal" style="width: 100%; padding: 0;">
+                                        <ul class="list-group list-group-horizontal-sm">
+                                            <li class="list-group-item" style="width: 100%;"><strong>Nome
+                                                    Demonstrativo</strong></li>
+                                            <li class="list-group-item" style="width: 100%;"><strong>Autor
+                                                    Demonstrativo</strong>
+                                            </li>
+                                            <li class="list-group-item" style="width: 100%;">Aluno Demonstrativo</li>
+                                            <li class="list-group-item" style="width: 100%;">DD/MM/YYYY</li>
+                                        </ul>
+                                    </button>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="btn mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#registered-studentModal" style="width: 100%; padding: 0;">
+                                        <ul class="list-group list-group-horizontal-sm">
+                                            <li class="list-group-item" style="width: 100%;"><strong>Nome
+                                                    Demonstrativo</strong></li>
+                                            <li class="list-group-item" style="width: 100%;"><strong>Autor
+                                                    Demonstrativo</strong>
+                                            </li>
+                                            <li class="list-group-item" style="width: 100%;">Aluno Demonstrativo</li>
+                                            <li class="list-group-item" style="width: 100%;">DD/MM/YYYY</li>
+                                        </ul>
+                                    </button>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="btn mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#registered-studentModal" style="width: 100%; padding: 0;">
+                                        <ul class="list-group list-group-horizontal-sm">
+                                            <li class="list-group-item" style="width: 100%;"><strong>Nome
+                                                    Demonstrativo</strong></li>
+                                            <li class="list-group-item" style="width: 100%;"><strong>Autor
+                                                    Demonstrativo</strong>
+                                            </li>
+                                            <li class="list-group-item" style="width: 100%;">Aluno Demonstrativo</li>
+                                            <li class="list-group-item" style="width: 100%;">DD/MM/YYYY</li>
+                                        </ul>
+                                    </button>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="btn mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#registered-studentModal" style="width: 100%; padding: 0;">
+                                        <ul class="list-group list-group-horizontal-sm">
+                                            <li class="list-group-item" style="width: 100%;"><strong>Nome
+                                                    Demonstrativo</strong></li>
+                                            <li class="list-group-item" style="width: 100%;"><strong>Autor
+                                                    Demonstrativo</strong>
+                                            </li>
+                                            <li class="list-group-item" style="width: 100%;">Aluno Demonstrativo</li>
+                                            <li class="list-group-item" style="width: 100%;">DD/MM/YYYY</li>
+                                        </ul>
+                                    </button>
+                                </div>
+
+                                <div class="mt-3">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item mr-2">
+                                                <a class="btn btn-outline-primary" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item mr-2"><a class="btn btn-primary" href="#">1</a></li>
+                                            <li class="page-item mr-2"><a class="btn btn-outline-primary" href="#">2</a>
+                                            </li>
+                                            <li class="page-item mr-2"><a class="btn btn-outline-primary" href="#">3</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="btn btn-outline-primary" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+    </section>
+
+    </div>
+
+    <div>
+        <div class="modal fade" id="registered-studentModal" tabindex="-1" aria-labelledby="registered-studentLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary">
+                        <h5 class="modal-title" style="color: white;" id="registered-studentLabel">
+                            Livro: Nome Demonstrativo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card-body" style="margin-top: -15px;">
+                            <p>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseEditProfile"
+                                    role="button" aria-expanded="false" aria-controls="collapseEditProfile"
+                                    style="width: 100%; margin-bottom: -8px;">
+                                    <strong style="color: white;">EDITAR</strong>
+                                </a>
+                            </p>
+                            <div class="collapse mb-2" id="collapseEditProfile">
+                                <div class="card card-body">
+                                    <div style="text-align: center; margin-top: -5px; margin-bottom: -10px;">
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1"
+                                                class="form-label"><strong>Foto</strong></label>
+                                            <input type="file" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1"
+                                                class="form-label"><strong>Nome</strong></label>
+                                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                                value="Nome Demonstrativo" aria-describedby="emailHelp">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1"
+                                                class="form-label"><strong>Autor</strong></label>
+                                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                                value="Autor Demonstrativo" aria-describedby="emailHelp">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1"
+                                                class="form-label"><strong>Quantidade</strong></label>
+                                            <input type="number" class="form-control" id="exampleInputEmail1" value="2"
+                                                aria-describedby="emailHelp">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1"
+                                                class="form-label"><strong>Categoria(s)</strong></label><br>
+                                            <h6 style="color: black; margin-top: -5px;"><button href="pa_index.html"
+                                                    class="btn btn-outline-primary">Categoria 1</button>
+                                                <button href="pa_index.html" class="btn btn-outline-primary">Categoria
+                                                    2</button>
+                                            </h6>
+                                            <div class="btn-group" role="group"
+                                                aria-label="Basic radio toggle button group">
+
+                                                <select class="option-class form-select bg-outline-primary"
+                                                    aria-label="Default select example" style="font-size: 18px;">
+                                                    <option value="0" selected>Adicionar categoria</option>
+                                                    <option value="1">Categoria 1</option>
+                                                    <option value="1">Categoria 2</option>
+                                                    <option value="1">Categoria 3</option>
+                                                    <option value="1">Categoria 4</option>
+                                                    <option value="1">Categoria 5</option>
+                                                    <option value="1">Categoria 6</option>
+                                                    <option value="1">Categoria 7</option>
+                                                    <option value="1">Categoria 8</option>
+                                                    <option value="1">Categoria 9</option>
+                                                    <option value="1">Categoria 10</option>
+                                                </select>
+                                            </div>
+                                            <button class="btn btn-primary" href="pa_comunicacao_avisos.html"><strong
+                                                    style="color: white;">ADICIONAR</strong></button>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1"
+                                                class="form-label"><strong>Tag(s)</strong></label>
+                                            <input type="text" placeholder="Separe por vírgulas. Ex: amor, casal"
+                                                class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" value="Tag 1, Tag 2, Tag 3, Tag 4, Tag 5">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1"
+                                                class="form-label"><strong>Descrição</strong></label>
+                                            <textarea type="text" style="height: 100px;" class="form-control"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">Isto é apenas uma descrição demonstrativa deste livro demonstrativo de um autor demonstrativo. Isto é apenas uma descrição demonstrativa deste livro demonstrativo de um autor demonstrativo. Isto é apenas uma descrição demonstrativa deste livro demonstrativo de um autor demonstrativo. Isto é apenas uma descrição demonstrativa deste livro demonstrativo de um autor demonstrativo. Isto é apenas uma descrição demonstrativa deste livro demonstrativo de um autor demonstrativo. Isto é apenas uma descrição demonstrativa deste livro demonstrativo de um autor demonstrativo.</textarea>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1"
+                                                class="form-label"><strong>Características</strong></label>
+                                            <input type="text" placeholder="Acabamento" class="form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" value="Capa dura">
+                                            <input type="text" placeholder="Data de lançamento da edição"
+                                                class="mt-2 form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" value="2018">
+                                            <input type="text" placeholder="Editora" class="mt-2 form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" value="ETE">
+                                            <input type="number" placeholder="Número de páginas"
+                                                class="mt-2 form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" value="123">
+                                            <input type="text" placeholder="País de origem" class="mt-2 form-control"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" value="Brasil">
+                                            <input type="text" placeholder="Livro técnico? [Sim/Não]"
+                                                class="mt-2 form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" value="Sim">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="modal-footer mt-2" style="margin: 0 auto; margin-bottom: -15px;">
+                                        <button type="button" class="btn-modal-edit btn btn-secondary"
+                                            data-bs-dismiss="modal">CANCELAR</button>
+                                        <button type="button" class="btn-modal-edit btn btn-primary"><strong
+                                                style="color: white;">CONFIRMAR</strong></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>
+                                <a class="btn btn-danger" data-bs-toggle="collapse" href="#collapsePunishment"
+                                    role="button" aria-expanded="false" aria-controls="collapsePunishment"
+                                    style="width: 100%;">
+                                    <strong style="color: white;">REMOVER</strong>
+                                </a>
+                            </p>
+                            <div class="collapse mb-2" id="collapsePunishment" style="margin-top: -8px;">
+                                <div class="card card-body">
+                                    <div style="text-align: center; margin-top: -5px; margin-bottom: -10px;">
+                                        <h5><strong>Motivo:</strong></h5>
+                                        <input type="email" class="form-control mb-2" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" style="font-size: 16px;">
+
+                                        <h5><strong>Duração:</strong></h5>
+                                        <input type="date" class="form-control mb-2" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" style="font-size: 18px;">
+
+                                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                                        <label class="btn btn-outline-danger mt-2 mb-2" style="width: 100%;"
+                                            for="btncheck1">Remover permanentemente</label>
+
+                                        <p class="mb-4"><strong>Ao confirmar, os estudantes não poderão mais solicitar o
+                                                empréstimo deste livro na biblioteca.</strong></p>
+
+                                    </div>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><strong
+                                            style="color: white;">CONFIRMAR</strong></button>
+                                </div>
+                            </div>
+
+                            <ul class="list-group">
+                                <li class="list-group-item active" aria-current="true" style="width: 100%;">
+                                    <strong style="color: white;">Visão geral</strong>
+                                </li>
+                                <div class="card mb-1" style="width: 100%;">
+                                    <img src="images/demo-book.jpeg" style="width: 150px; margin: 0 auto;"
+                                        class="card-img-top pt-2" alt="student-icon">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nome Demonstrativo <a href="livro.html"
+                                                class="btn btn-primary">Ver livro</a></h5>
+                                        <p class="card-text">Autor: <strong>Autor Demonstrativo</strong><br>
+                                            Disponível: <strong>x exemplares</strong><br>
+                                            Quantidade: <strong>X exemplares</strong><br>
+                                            Categorias: <strong>Categoria 1</strong>, <strong>Categoria 2</strong> e
+                                            <strong>Categoria 3</strong><br>
+                                            Tags: <strong>Tag 1</strong>, <strong>Tag 2</strong>, <strong>Tag
+                                                3</strong>, <strong>Tag 4</strong> e <strong>Tag 5</strong><br><br>
+                                            Descrição: <strong>Isto é apenas uma descrição demonstrativa deste livro
+                                                demonstrativo de um autor demonstrativo. Isto é apenas uma descrição
+                                                demonstrativa deste livro demonstrativo de um autor demonstrativo. Isto
+                                                é apenas uma descrição demonstrativa deste livro demonstrativo de um
+                                                autor demonstrativo. Isto é apenas uma descrição demonstrativa deste
+                                                livro demonstrativo de um autor demonstrativo. Isto é apenas uma
+                                                descrição demonstrativa deste livro demonstrativo de um autor
+                                                demonstrativo. Isto é apenas uma descrição demonstrativa deste livro
+                                                demonstrativo de um autor demonstrativo.</strong><br><br>
+                                            Características: <strong>Caterística 1: Característica 1</strong>,
+                                            <strong>Caterística 2: Característica 2</strong>, <strong>Caterística 3:
+                                                Característica 3</strong>, <strong>Caterística 4: Característica
+                                                4</strong>, <strong>Caterística 5: Característica 5</strong>,
+                                            <strong>Caterística 6: Característica 6</strong> e <strong>Caterística 7:
+                                                Característica 7</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </ul>
+
+                        </div>
+
+                        <div class="mb-3 ml-4 mr-3">
+                            <ul class="list-group">
+                                <li class="list-group-item active" aria-current="true" style="width: 100%;">
+                                    <strong style="color: white;">Histórico de empréstimos</strong>
+                                </li>
+                                <li class="list-group-item">
+                                    <ul class="list-group list-group-flush" style="text-align: center;">
+                                        <li class="list-group-item">
+                                            <div class="row align-items-start">
+                                                <div class="col">
+                                                    <a href="pa_estudantes_ativos.html"
+                                                        class="btn btn-primary btn-sm"><strong>Nome
+                                                            Demonstrativo</strong></a>
+                                                </div>
+                                                <div class="col">
+                                                    <strong>Status</strong>
+                                                </div>
+                                                <div class="col">
+                                                    Devolução em <strong>DD/MM/YYYY</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row align-items-start">
+                                                <div class="col">
+                                                    <a href="pa_estudantes_ativos.html"
+                                                        class="btn btn-primary btn-sm"><strong>Nome
+                                                            Demonstrativo</strong></a>
+                                                </div>
+                                                <div class="col">
+                                                    <strong>Status</strong>
+                                                </div>
+                                                <div class="col">
+                                                    Devolução em <strong>DD/MM/YYYY</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row align-items-start">
+                                                <div class="col">
+                                                    <a href="pa_estudantes_ativos.html"
+                                                        class="btn btn-primary btn-sm"><strong>Nome
+                                                            Demonstrativo</strong></a>
+                                                </div>
+                                                <div class="col">
+                                                    <strong>Status</strong>
+                                                </div>
+                                                <div class="col">
+                                                    Devolução em <strong>DD/MM/YYYY</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row align-items-start">
+                                                <div class="col">
+                                                    <a href="pa_estudantes_ativos.html"
+                                                        class="btn btn-primary btn-sm"><strong>Nome
+                                                            Demonstrativo</strong></a>
+                                                </div>
+                                                <div class="col">
+                                                    <strong>Status</strong>
+                                                </div>
+                                                <div class="col">
+                                                    Devolução em <strong>DD/MM/YYYY</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row align-items-start">
+                                                <div class="col">
+                                                    <a href="pa_estudantes_ativos.html"
+                                                        class="btn btn-primary btn-sm"><strong>Nome
+                                                            Demonstrativo</strong></a>
+                                                </div>
+                                                <div class="col">
+                                                    <strong>Status</strong>
+                                                </div>
+                                                <div class="col">
+                                                    Devolução em <strong>DD/MM/YYYY</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row align-items-start">
+                                                <div class="col">
+                                                    <a href="pa_estudantes_ativos.html"
+                                                        class="btn btn-primary btn-sm"><strong>Nome
+                                                            Demonstrativo</strong></a>
+                                                </div>
+                                                <div class="col">
+                                                    <strong>Status</strong>
+                                                </div>
+                                                <div class="col">
+                                                    Devolução em <strong>DD/MM/YYYY</strong>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="modal-footer" style="margin-bottom: -15px;">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                style="margin: 0 auto;"><strong style="color: white;">FECHAR</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="credits">
+            <div class="card text-center">
+                <div class="card-header bg-primary" style="color: white;">
+                    <p style="margin: 0 auto;">Créditos ao desenvolvedor</p>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">JOAB HENRIQUE MARQUES DA SILVA</h5>
+                    <p class="card-text">Aluno do 2º ano do Ensino Médio Integrado ao Curso Técnico em
+                        Desenvolvimento
+                        de Sistemas.</p>
+                    <a href="https://joabhenrique.github.io/portfolio/" target="blank"
+                        class="btn btn-primary">PORTFÓLIO</a>
+                </div>
+                <div class="card-footer text-muted bg-primary">
+                    <a href="index.html" style="color: white; margin: 0 auto;">www.etepalmares.com.br</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <script src="scripts.js"></script>
+</body>
+
+</html>
